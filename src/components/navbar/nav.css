@@ -1,0 +1,25 @@
+#navmenu {
+    color: black;
+}
+
+#nav {
+    margin-right: 10%;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+@media screen and (max-width:769px) {
+    #navmenu {
+        color: #fff;
+    }
+
+    #nav {
+        margin-right: 0;
+    }
+}
