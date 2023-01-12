@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 
 export const HeroContainer = styled.div`
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 1069px;
     left: 0px;
-    top: 0px;
+    /* top: -160px; */
     background: #E8F3EB;
 
     @media screen and (max-width: 769px) {
@@ -23,7 +23,7 @@ export const HeroHeader = styled.div`
     line-height: 100%;
     text-align: center;
     color: #2E312F;
-    margin-top: 156px;
+    padding-top: 156px;
 
     @media screen and (max-width: 769px) {
         font-size: 30px;

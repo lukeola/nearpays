@@ -40,10 +40,24 @@ const Navbar = () => {
         menuToggleHandler();
         history.push("/page-cta");
     };
+    
+    //change nav color when scrolling
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+            
+    }
+
+    window.addEventListener('scroll', changeColor)
+    
 
     return (
-        <div id="header">
-        <header  className={classes.header}>
+        <div id="header" className={color ? "header-bg" : "header"} >
+        <header  className={classes.header} >
             <div className={classes.header__content}>
                 <Link to="/" className={classes.header__content__logo}>
                     <img src={Logo}  alt='NearPays'/>
