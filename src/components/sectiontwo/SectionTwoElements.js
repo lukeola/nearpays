@@ -7,7 +7,7 @@ export const SectionTwoContainer = styled.div`
 
 
     @media screen and (max-width: 769px) {
-        height: 818px;
+        height: 868px;
     }
 `
 export const SectionTwoHeader = styled.div`
@@ -133,7 +133,7 @@ export const Box3 = styled.div`
 
     @media screen and (max-width: 769px) {
     
-    margin-top: 10px;
+    margin-top: 60px;
 }
 `
 export const GreenLine = styled.div`
@@ -146,8 +146,8 @@ export const GreenLine = styled.div`
     @media screen and (max-width: 769px) {
         position: absolute;
         width: 50%;
-        height: 111px;
-        left: 45%;
+        height: 61px;
+        margin-left: 40%;
         margin-top: 150px;
         transform: rotate(90.52deg);
 }
@@ -162,10 +162,13 @@ export const BlueLine = styled.div`
 
     @media screen and (max-width: 769px) {
         position: absolute;
-        width: 30%;
-        height: 71px;
-        left: 45%;
+        width: 25%;
+        height: 31px;
+        left: 20%;
         margin-top: 450px;
-        transform: rotateX(180.52deg), rotateY(270deg);
+     
+        transform:  rotate(140deg) ;
+      
+
 }
 `
