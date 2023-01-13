@@ -12,11 +12,10 @@ export const FooterContainer = styled.div`
     }
 `
 export const FooterHeader = styled.div`
-    position: absolute;
-    height: 142px;
+    position: relative;
     width: 30%;
     margin-left: 35%;
-    margin-top: 111px;
+    top: 111px;
     font-size: 56px;
     font-weight: 700;
     line-height: 71px;
@@ -29,7 +28,7 @@ export const FooterHeader = styled.div`
     @media screen and (max-width: 769px) {
         width: 80%;
         margin-left: 10%;
-        margin-top: 48px;
+        top: 48px;
         font-size: 32px;
         font-size: 32px;
         font-weight: 500;
@@ -42,31 +41,31 @@ export const FooterHeader = styled.div`
 `
 
 export const FooterText =styled.div`
-    position: absolute;
+    position: relative;
     height: 32px;
     width: 40%;
     margin-left: 30%;
-    margin-top: 293px;
+    margin-top: 160px;
     color: #C7CFCD;
     text-align: center;
 
     @media screen and (max-width: 769px) {
-        margin-top: 152px;
+        margin-top: 80px;
         width: 60%;
         margin-left: 20%;
     }
 `
 
 export const Emailcontainer = styled.div`
-    position: absolute;
+    position: relative;
     width: 80%;
     left: 10%;
-    margin-top: 363px;
+    margin-top: 33px;
     display: flex;
     justify-content: center;
 
     @media screen and (max-width: 769px) {
-        margin-top: 216px;
+        margin-top: 43px;
     }
 `
 
@@ -86,16 +85,16 @@ export const EmailIcon = styled.div`
 `
 
 export const NavSocialContainer = styled.div`
-    position: absolute;
+    position: relative;
     width: 90%;
     margin-left: 5%;
-    margin-top: 510px;
+    margin-top: 98px;
     display: flex;
     justify-content: space-between;
     text-align: center;
 
     @media screen and (max-width: 769px) {
-        margin-top: 295px;
+        margin-top: 32px;
         flex-direction: column;
         width: 100%;
         margin-left: 0;
@@ -137,19 +136,19 @@ export const SocialContainer = styled.div`
 export const BottomLinks = styled.div`
     width: 90%;
     margin-left: 5%;
-    position: absolute;
-    margin-top: 611px;
+    position: relative;
+    margin-top: 91px;
     display: flex;
     color: #929B95;
 
     @media screen and (max-width: 769px) {
        flex-direction: column;
-       margin-top: 416px;
+       margin-top: 52px;
     }
 `
 export const Rights = styled.div`
     width: 70%;
-
+    
     @media screen and (max-width: 769px) {
         width: 100%;
         text-align: center;
@@ -158,6 +157,7 @@ export const Rights = styled.div`
 `
 export const Terms = styled.div`
     width: 20%;
+    text-align: end;
 
     @media screen and (max-width: 769px) {
         position: absolute;
@@ -167,8 +167,14 @@ export const Terms = styled.div`
     }
 `
 export const Privacy = styled.div`
-    position: absolute;
-    width: 100%;
+    width: 20%;
     text-align: end;
-    margin-top: 65px;
+
+
+    @media screen and (max-width: 769px) {
+        position: absolute;
+        width: 100%;
+        text-align: end;
+        margin-top: 65px;
+    }
 `

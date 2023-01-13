@@ -1,9 +1,12 @@
 import React from 'react'
+import { SectionThreeContainer } from './SectionThreeElements'
 
-const index = () => {
+const SectionThree = () => {
   return (
-    <div>index</div>
+    <SectionThreeContainer>
+      
+    </SectionThreeContainer>
   )
 }
 
-export default index
+export default SectionThree
