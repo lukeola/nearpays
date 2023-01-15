@@ -1,15 +1,109 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import Footer from '../../components/footer'
 import Navbar from '../../components/navbar/Navbar'
-import { WhyContainer } from './WhyElements'
-
+import { Downheader, DownImage, Downline, Downtext, FaqAnswer, Faqicons, Faqitems, FaqQuestion, Faqwrapper, FiveHeader, Header, LeftSide, Moretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne, SectionThree, SectionTwo, Text, ThreeHeader, ThreeText1, ThreeText2, Upheader, Upline, Uptext, WhyContainer } from './WhyElements'
+import Bgimg from '../../images/bgimage.png'
+import Fourimg from '../../images/fourimage.png'
+import './faq.css'
 const WhyNearpays = () => {
+
+  const [selected, setSelected] = useState(null)
+
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null)
+    }
+
+    setSelected(i)
+  }
+
   return (
     <WhyContainer>
       <Navbar/>
+      <SectionOne>
+      <Header>Nearpays is a full-service financial payment platform</Header>
+      <Text>
+      Nearpays is a full-service financial payment platform that acts as an end-to-end financial service for all our clients. We have created various features to simplify online payments as much as possible, based on the principle that payments should be seamless. We have also developed a way to put point-of-sale transactions back into the hands of our users. The experience is simple, on the go, and comes with no extra bank charges for all our users.
+      </Text>
+      </SectionOne>
+
+      <SectionTwo>
+      <img src={Bgimg} alt='' style={{objectFit:'fill', height:'1005', width:'100%'}}/>
+      </SectionTwo>
+
+      <SectionThree>
+        <ThreeHeader>Meet the founder</ThreeHeader>
+        <ThreeText1>OpenAI’s mission is to ensure that artificial general intelligence (AGI)—by which we mean highly autonomous systems that outperform humans at most economically valuable work—benefits all of humanity.</ThreeText1>
+        <ThreeText2>We will attempt to directly build safe and beneficial AGI, but will also consider our mission fulfilled if our work aids others to achieves outcome.</ThreeText2>
+      </SectionThree>
+
+      <SectionFour>
+        <SectionFourUp>
+          <Upheader>The Next Generation Payment Method</Upheader>
+          <Uptext>
+            Making payments should be easy, smart and seamless. Thats’s what we are all about. Access and make payments globally without having to worry about how you money moves. At Nearpays, stay up to date and follow all your transactions across diferent banks in one place
+          </Uptext>
+          <Upline/>
+        </SectionFourUp>
+
+        <SectionFourDown>
+          <DownImage>
+            <img src={Fourimg} alt='' style={{objectFit:'fill', width:'100%', height:'100%'}}/>
+          </DownImage>
+          <Downheader>Take Control Of Your Payments</Downheader>
+          <Downtext>
+            Let’s help you make your money work for you. This single integration payment platform gives you full control of your cards and up to date clarity of your funds. You shouldn’t break a sweat to make money and break even more managing your finances. Let Nearpays do that for you.
+          </Downtext>
+          <Downline/>
+        </SectionFourDown>
+      </SectionFour>
+
+      <SectionFive>
+          <LeftSide>
+          <FiveHeader>FAQs</FiveHeader>
+          </LeftSide>
+          <RightSide>
+          <Faqwrapper>
+          {data.map((item, i) => (
+            <div>
+            <Faqitems>
+              <FaqQuestion onClick={() => toggle(i)}>{item.Question}</FaqQuestion>
+              <FaqAnswer className={selected === i ? 'content show' : 'content'}>{item.Answer}</FaqAnswer>
+              <Faqicons><span>{selected === i ? "-" : "+"}</span></Faqicons>
+            </Faqitems>
+            </div>
+          ))}
+   
+          </Faqwrapper>
+          <Moretext>Have more questions? <a href='/contact-us' style={{textDecoration:'none', color:'#5DAF60'}}>Contact Us</a></Moretext>
+          </RightSide>
+        </SectionFive>
+
       <Footer/>
     </WhyContainer>
   )
 }
+
+const data = [
+  {
+    Question: 'What is NearPays?',
+    Answer: 'Nearpays is the modern way to help you move money'
+  },
+
+  {
+    Question: 'What is NearPays?',
+    Answer: 'Nearpays is the modern way to help you move money'
+  },
+
+  {
+    Question: 'What is NearPays?',
+    Answer: 'Nearpays is the modern way to help you move money'
+  },
+
+  {
+    Question: 'What is NearPays?',
+    Answer: 'Nearpays is the modern way to help you move money'
+  }
+]
 
 export default WhyNearpays

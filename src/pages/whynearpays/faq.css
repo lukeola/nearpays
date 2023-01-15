@@ -1,0 +1,19 @@
+.content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+    height: auto;
+    margin-top: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.content.show {
+    height: auto;
+    max-height: 999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
