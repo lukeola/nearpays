@@ -8,7 +8,9 @@ import './nav.css'
 
 const Navbar = () => {
     const history = useNavigate ();
+
     const [menuOpen, setMenuOpen] = useState(false);
+    
     const [size, setSize] = useState({
         width: undefined,
         height: undefined,
