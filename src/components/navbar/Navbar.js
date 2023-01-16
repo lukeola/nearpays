@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import classes from "./Header.module.scss";
-import { Link, useNavigate  } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Logo from '../../../src/images/nearpayslogo.png'
 import './nav.css'
 
 const Navbar = () => {
-    const history = useNavigate ();
+   
 
     const [menuOpen, setMenuOpen] = useState(false);
     
@@ -38,10 +38,7 @@ const Navbar = () => {
         setMenuOpen((p) => !p);
     };
 
-    const ctaClickHandler = () => {
-        menuToggleHandler();
-        history.push("/page-cta");
-    };
+   
     
     //change nav color when scrolling
     const [color, setColor] = useState(false)
@@ -86,7 +83,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    <button onClick={ctaClickHandler}>Register</button>
+                    <a href="/register"><button>Register</button></a>
                 </nav>
                 <div className={classes.header__content__toggle}>
                     {!menuOpen ? (

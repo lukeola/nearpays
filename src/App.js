@@ -4,6 +4,8 @@ import Faq from './pages/faq';
 import Home from "./pages/Home";
 import WhyNearpays from './pages/whynearpays';
 import Register from './pages/register/index'
+import Register2 from './pages/register/register-page-2';
+import Register3 from './pages/register/register-page-3';
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route exact path='/faq'  element={<Faq/>} />
         <Route exact path='/contact-us'  element={<ContactUs/>} />
         <Route exact path='/register'  element={<Register/>} />
+        <Route exact path='/register-page-2'  element={<Register2/>} />
+        <Route exact path='/register-page-3'  element={<Register3/>} />
       </Routes>
       
     </Router>
