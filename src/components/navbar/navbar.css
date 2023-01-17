@@ -55,7 +55,17 @@
 }
 
 #register-button {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
     border: none;
+    padding: 10px 16px;
+    width: 135px;
+    height: 40px;
+    background: #043F2E;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
    
     
 }
@@ -88,6 +98,7 @@
         display: flex;
         position: absolute;
         top: 15px;
+        left: 10px;
        
     }
 
@@ -98,9 +109,12 @@
         padding-top: 100px;
         flex-direction: column;
         list-style: none;
-        background-color: rgb(224,235,227, 0.9);
+        background-color: rgba(255,255,255, .65);
+        box-shadow: 0 8px 32 px 0 rgba(31, 38, 135, .37);
+        backdrop-filter: blur(4px);
+        border-radius: 13px;
         top: 75px;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.8s ease-in-out;
         width: 100%;
         z-index: 5;
         text-align: center;
@@ -110,14 +124,25 @@
     .contact,
     .faq,
     .whynearpays {
+        position: relative;
         text-decoration: none;
         color: black;
-        font-size: 20px;
-        padding: 10px 20px;
-        margin: 0 10px;
+        font-size: 16px;
+        padding:15px;
+        background-color: rgb(224,235,227, 0.8);
         cursor: pointer;
-        width: 100%;
-        transition: all 0.5s ease-in-out;
+        margin-top: 20px;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 10px;
+        transition: all 0.9s ease-in-out;
+    }
+
+    #register-button {
+        margin-top: 20px;
+        width: 50%;
+       
+        
     }
 
  

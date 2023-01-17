@@ -72,7 +72,6 @@ export const Faqitems = styled.div`
     padding: 24px 48px 24px 48px;
     background: #D3E0D7;
     cursor: pointer;
-    z-index: 5;
  
 
     @media screen and (max-width: 769px) {
@@ -116,7 +115,7 @@ export const Moretext =styled.div`
     top: 1036px;
 
     @media screen and (max-width: 769px) {
-        top: 1036px;
+        top: 1096px;
 
     }
 `

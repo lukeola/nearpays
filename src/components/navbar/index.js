@@ -44,8 +44,8 @@ window.addEventListener('scroll', changeColor)
                 <li>Contact Us</li>
             </Link>
 
-            <Link to="/register" id='register-button'>
-                <button >Register</button>
+            <Link to="/register" >
+                <button id='register-button'>Register</button>
             </Link>
         </ul>
         <button className='mobile-menu-icon' onClick={() => setMobile(!Mobile)}>
