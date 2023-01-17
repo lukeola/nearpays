@@ -345,14 +345,14 @@ export const RightSide = styled.div`
 
     }
 `
-export const Faqwrapper = styled.div`
+export const WhyFaqwrapper = styled.div`
     margin-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 `
-export const Faqitems = styled.div`
+export const WhyFaqitems = styled.div`
     position: relative;
     height: auto;
     display: flex;
@@ -363,7 +363,7 @@ export const Faqitems = styled.div`
 ;
 
 `
-export const FaqQuestion = styled.div`
+export const WhyFaqQuestion = styled.div`
     position: absolute;
     width: 100%;
     font-family: 'Fakt Pro';
@@ -372,14 +372,15 @@ export const FaqQuestion = styled.div`
     font-size: 20px;
     color: #FFFFFF;
 `
-export const FaqAnswer = styled.div`
+export const WhyFaqAnswer = styled.div`
     position: relative;
 
 `
-export const Faqicons = styled.div`
+export const WhyFaqicons = styled.div`
     position: relative;
     left: 50%;
     color: #fff;
+    cursor: pointer;
 
     @media screen and (max-width: 769px) {
         position: absolute;
@@ -387,7 +388,7 @@ export const Faqicons = styled.div`
 
     }
 `
-export const Moretext =styled.div`
+export const WhyMoretext =styled.div`
     position: absolute;
     font-family: Circular Std;
     font-size: 20px;

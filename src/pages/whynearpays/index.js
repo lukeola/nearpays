@@ -1,10 +1,10 @@
 import React ,{useState}from 'react'
 import Footer from '../../components/footer'
-import Navbar from '../../components/navbar/Navbar'
-import { Downheader, DownImage, Downline, Downtext, FaqAnswer, Faqicons, Faqitems, FaqQuestion, Faqwrapper, FiveHeader, Header, LeftSide, Moretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne, SectionThree, SectionTwo, Text, ThreeHeader, ThreeText1, ThreeText2, Upheader, Upline, Uptext, WhyContainer } from './WhyElements'
+import Navbar from '../../components/navbar'
+import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne, SectionThree, SectionTwo, Text, ThreeHeader, ThreeText1, ThreeText2, Upheader, Upline, Uptext, WhyContainer } from './WhyElements'
 import Bgimg from '../../images/bgimage.png'
 import Fourimg from '../../images/fourimage.png'
-import './faq.css'
+import './why.css'
 const WhyNearpays = () => {
 
   const [selected, setSelected] = useState(null)
@@ -60,22 +60,22 @@ const WhyNearpays = () => {
 
       <SectionFive>
           <LeftSide>
-          <FiveHeader>FAQs</FiveHeader>
+          <FiveHeader>WhyFaqs</FiveHeader>
           </LeftSide>
           <RightSide>
-          <Faqwrapper>
+          <WhyFaqwrapper>
           {data.map((item, i) => (
             <div>
-            <Faqitems>
-              <FaqQuestion onClick={() => toggle(i)}>{item.Question}</FaqQuestion>
-              <FaqAnswer className={selected === i ? 'content show' : 'content'}>{item.Answer}</FaqAnswer>
-              <Faqicons><span>{selected === i ? "-" : "+"}</span></Faqicons>
-            </Faqitems>
+            <WhyFaqitems>
+              <WhyFaqQuestion onClick={() => toggle(i)}>{item.Question}</WhyFaqQuestion>
+              <WhyFaqAnswer className={selected === i ? 'content show' : 'content'}>{item.Answer}</WhyFaqAnswer>
+              <WhyFaqicons><span>{selected === i ? "-" : "+"}</span></WhyFaqicons>
+            </WhyFaqitems>
             </div>
           ))}
    
-          </Faqwrapper>
-          <Moretext>Have more questions? <a href='/contact-us' style={{textDecoration:'none', color:'#5DAF60'}}>Contact Us</a></Moretext>
+          </WhyFaqwrapper>
+          <WhyMoretext>Have more questions? <a href='/contact-us' style={{textDecoration:'none', color:'#5DAF60'}}>Contact Us</a></WhyMoretext>
           </RightSide>
         </SectionFive>
 

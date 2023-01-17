@@ -26,6 +26,7 @@ export const LeftSide = styled.div`
 `
 export const RightSide = styled.div`
     width: 50%;
+    margin-top: 190px;
 
     @media screen and (max-width: 769px) {
         top: 48px;
@@ -52,7 +53,6 @@ export const FaqHeader = styled.div`
     }
 `
 export const Faqwrapper = styled.div`
-    margin-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -71,14 +71,15 @@ export const Faqitems = styled.div`
     border-radius: 16px;
     padding: 24px 48px 24px 48px;
     background: #D3E0D7;
+    cursor: pointer;
+    z-index: 5;
+ 
 
     @media screen and (max-width: 769px) {
         width: 95%;
         left: 2.5%;
 
     }
-
-
 `
 export const FaqQuestion = styled.div`
     position: absolute;
@@ -98,6 +99,7 @@ export const Faqicons = styled.div`
     position: relative;
     left: 30%;
     color: #2E312F;
+    cursor: pointer;
 
     @media screen and (max-width: 769px) {
         position: absolute;

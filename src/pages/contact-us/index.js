@@ -1,8 +1,8 @@
 import React from 'react'
 import Footer from '../../components/footer'
-import Navbar from '../../components/navbar/Navbar'
 import { ContactButton, ContactContainer, ContactForm, ContactHeader, ContactInput, ContactLeft, ContactRight, ContactSocial, ContactText, ContactTextArea } from './ContactElements'
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import Navbar from '../../components/navbar'
 
 const ContactUs = () => {
   return (
