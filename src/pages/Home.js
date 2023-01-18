@@ -5,7 +5,7 @@ import Navbar from "../components/navbar";
 import SectionOne from "../components/sectionone";
 import SectionThree from "../components/sectionthree";
 import SectionTwo from "../components/sectiontwo";
-import SimpleSlider from "../components/slider/SimpleSlider";
+// import SimpleSlider from "../components/slider/SimpleSlider";
 
 
 
@@ -17,7 +17,7 @@ const Home = () => {
         <SectionOne/>
         <SectionTwo/>
         <SectionThree/>
-        <SimpleSlider/>
+        {/* <SimpleSlider/> */}
         <Footer/>
         </>
     )
