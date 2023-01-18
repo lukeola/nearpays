@@ -61,7 +61,7 @@ export const Rightside = styled.div`
   
 `
 export const RightsideHeading = styled.div`
-    width: 80%;
+    width: 380px;
     height: 81px;
     font-family: 'Circular Std';
     font-style: normal;
@@ -86,9 +86,9 @@ export const RightsideText = styled.div`
     font-size: 20px;
     line-height: 210%;
     color: #2E312F;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    
+   
+    
 
         @media screen and (max-width: 769px) {
             width: 90%;

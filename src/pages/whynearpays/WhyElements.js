@@ -351,6 +351,8 @@ export const WhyFaqwrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+
 `
 export const WhyFaqitems = styled.div`
     position: relative;
@@ -360,6 +362,8 @@ export const WhyFaqitems = styled.div`
     border-radius: 16px;
     padding: 24px 48px 24px 48px;
     background: #1E3125;
+
+
 ;
 
 `
@@ -371,6 +375,10 @@ export const WhyFaqQuestion = styled.div`
     font-weight: 300;
     font-size: 20px;
     color: #FFFFFF;
+    @media screen and (max-width: 769px) {
+        width: 90%;
+        margin-left: 0;
+    }
 `
 export const WhyFaqAnswer = styled.div`
     position: relative;

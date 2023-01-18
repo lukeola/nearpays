@@ -65,13 +65,13 @@ const WhyNearpays = () => {
           <RightSide>
           <WhyFaqwrapper>
           {data.map((item, i) => (
-            <div>
+            <React.Fragment key={item.Id}>
             <WhyFaqitems>
               <WhyFaqQuestion onClick={() => toggle(i)}>{item.Question}</WhyFaqQuestion>
               <WhyFaqAnswer className={selected === i ? 'content show' : 'content'}>{item.Answer}</WhyFaqAnswer>
               <WhyFaqicons><span>{selected === i ? "-" : "+"}</span></WhyFaqicons>
             </WhyFaqitems>
-            </div>
+            </React.Fragment>
           ))}
    
           </WhyFaqwrapper>
@@ -87,22 +87,26 @@ const WhyNearpays = () => {
 const data = [
   {
     Question: 'What is NearPays?',
-    Answer: 'Nearpays is the modern way to help you move money'
+    Answer: 'Nearpays is the modern way to help you move money',
+    Id:1
   },
 
   {
     Question: 'What is NearPays?',
-    Answer: 'Nearpays is the modern way to help you move money'
+    Answer: 'Nearpays is the modern way to help you move money',
+    Id:2
   },
 
   {
     Question: 'What is NearPays?',
-    Answer: 'Nearpays is the modern way to help you move money'
+    Answer: 'Nearpays is the modern way to help you move money',
+    Id:3
   },
 
   {
     Question: 'What is NearPays?',
-    Answer: 'Nearpays is the modern way to help you move money'
+    Answer: 'Nearpays is the modern way to help you move money',
+    Id:4
   }
 ]
 

@@ -73,7 +73,7 @@ export const ContactSocial = styled.div`
     color: #5DAF60;
 
 `
-export const ContactForm = styled.div`
+export const ContactForm = styled.form`
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -112,7 +112,7 @@ export const ContactTextArea = styled.textarea`
         height: 151px;
     }
 `
-export const ContactButton = styled.div`
+export const ContactButton = styled.button`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -124,6 +124,8 @@ export const ContactButton = styled.div`
     background: #043F2E;
     border-radius: 16px;
     color: #fff;
+    border: none;
+    cursor: pointer;
     
     @media screen and (max-width: 769px) {
         width: 90%;

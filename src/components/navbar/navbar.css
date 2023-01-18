@@ -82,11 +82,11 @@
         border: none;
         cursor: pointer;
         display: block;
-        position: absolute;
         font-size: 30px;
         outline: none;
-        top: 15px;
-        right: 25px;
+        margin-top: 15px;
+        margin-left: 80%;
+       
 
     }
 
@@ -99,6 +99,7 @@
         position: absolute;
         top: 15px;
         left: 10px;
+        width: 20%;
        
     }
 
