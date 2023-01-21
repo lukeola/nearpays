@@ -1,0 +1,114 @@
+.sign-in-container {
+    position: absolute;
+    width: 50%;
+    height: 455px;
+    left: 25%;
+    top: 158px;
+    background: #E0EBE3;
+    border-radius: 16px;
+    z-index: 2;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.auth-header {
+    
+    width: 100%;
+    text-align: center;
+    height: 122px;
+    margin-top: 34px;
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    color: #2E312F;
+
+}
+
+.sign-in-input {
+    width: 70%;
+    margin-left: 15%;
+    height: 64px;
+    padding: 2%;
+    background: #D3E0D7;
+    border-radius: 16px;
+    border: none;
+}
+
+#sign-in-btn1 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 10px;
+    top: 350px;
+    left: 100px;
+    width: 30%;
+    height: 65px;
+    background: #043F2E;
+    border-radius: 16px;
+    color: #fff;
+    border: none;
+}
+
+#sign-in-btn2 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 10px;
+    top: 50px;
+    width: 30%;
+    height: 65px;
+    background: #043F2E;
+    border-radius: 16px;
+    color: #fff;
+    border: none;
+    top: 350px;
+    left: 300px;
+}
+
+#sign-up-text {
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 100px;
+}
+
+#sign-in-text {
+    position: absolute;
+    margin-top: 470px;
+    margin-left: 300px;
+}
+
+.sign-up-container {
+    position: absolute;
+    width: 50%;
+    height: 555px;
+    left: 25%;
+    top: 158px;
+    background: #E0EBE3;
+    border-radius: 16px;
+    z-index: 2; 
+}
+
+#sign-up-btn1 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 10px;
+    top: 450px;
+    left: 100px;
+    width: 30%;
+    height: 65px;
+    background: #043F2E;
+    border-radius: 16px;
+    color: #fff;
+    border: none;
+}

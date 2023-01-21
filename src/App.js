@@ -6,6 +6,8 @@ import Register from './pages/register/index'
 import Register2 from './pages/register/register-page-2';
 import Register3 from './pages/register/register-page-3';
 import FaqSection from './pages/faq';
+import SignIn from './components/auth/SignIn';
+import SignUp from './components/auth/SignUp';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route exact path='/register'  element={<Register/>} />
         <Route exact path='/register-page-2'  element={<Register2/>} />
         <Route exact path='/register-page-3'  element={<Register3/>} />
+        <Route exact path='/sign-in'  element={<SignIn/>} />
+        <Route exact path='/sign-up'  element={<SignUp/>} />
       </Routes>
       
     </Router>
