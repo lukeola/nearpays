@@ -37,10 +37,10 @@ export const HeroImg = styled.div`
     margin-top: 50px;
 
     @media screen and (max-width: 769px) {
-        font-size: 30px;
         width: 120%;
         margin-left: 0;
         height: 400px;
         overflow: hidden;
+        margin-top: 80px;
     }
 `

@@ -31,11 +31,11 @@ const WhyNearpays = () => {
       <img src={Bgimg} alt='' style={{objectFit:'fill', height:'1005', width:'100%'}}/>
       </SectionTwo>
 
-      <SectionThree>
+      {/* <SectionThree>
         <ThreeHeader>Meet the founder</ThreeHeader>
         <ThreeText1>OpenAI’s mission is to ensure that artificial general intelligence (AGI)—by which we mean highly autonomous systems that outperform humans at most economically valuable work—benefits all of humanity.</ThreeText1>
         <ThreeText2>We will attempt to directly build safe and beneficial AGI, but will also consider our mission fulfilled if our work aids others to achieves outcome.</ThreeText2>
-      </SectionThree>
+      </SectionThree> */}
 
       <SectionFour>
         <SectionFourUp>

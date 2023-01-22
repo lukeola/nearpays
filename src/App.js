@@ -8,6 +8,7 @@ import Register3 from './pages/register/register-page-3';
 import FaqSection from './pages/faq';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
+import Profile from './pages/profile';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route exact path='/register-page-3'  element={<Register3/>} />
         <Route exact path='/sign-in'  element={<SignIn/>} />
         <Route exact path='/sign-up'  element={<SignUp/>} />
+        <Route exact path='/profile'  element={<Profile/>} />
       </Routes>
       
     </Router>
