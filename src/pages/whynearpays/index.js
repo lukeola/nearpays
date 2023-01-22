@@ -68,7 +68,7 @@ const WhyNearpays = () => {
             <React.Fragment key={item.Id}>
             <WhyFaqitems>
               <WhyFaqQuestion onClick={() => toggle(i)}>{item.Question}</WhyFaqQuestion>
-              <WhyFaqAnswer className={selected === i ? 'content show' : 'content'}>{item.Answer}</WhyFaqAnswer>
+              <WhyFaqAnswer className={selected === i ? 'why-content show' : 'why-content'}>{item.Answer}</WhyFaqAnswer>
               <WhyFaqicons><span>{selected === i ? "-" : "+"}</span></WhyFaqicons>
             </WhyFaqitems>
             </React.Fragment>
