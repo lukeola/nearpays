@@ -56,33 +56,6 @@ export const FooterText =styled.div`
     }
 `
 
-export const Emailcontainer = styled.div`
-    position: relative;
-    width: 80%;
-    left: 10%;
-    margin-top: 33px;
-    display: flex;
-    justify-content: center;
-
-    @media screen and (max-width: 769px) {
-        margin-top: 43px;
-    }
-`
-
-export const EmailInput = styled.input`
-    color: #fff;
-    background: #080808;
-    width: 60%;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    padding-bottom: 7px;
-    cursor: pointer;
-`
-export const EmailIcon = styled.div`
-    margin-left: -2%;
-    cursor: pointer;
-`
 
 export const NavSocialContainer = styled.div`
     position: relative;

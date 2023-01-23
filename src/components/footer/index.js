@@ -1,8 +1,12 @@
 import React from 'react'
-import { BottomLinks, Emailcontainer, EmailIcon, EmailInput, FooterContainer, FooterHeader, FooterText, NavContainer, NavItems, NavSocialContainer, Privacy, Rights, SocialContainer, Terms } from './FooterElements'
-import SendIcon from '../../images/sendicon.png'
+import { BottomLinks,FooterContainer, FooterHeader, FooterText, NavContainer, NavItems, NavSocialContainer, Privacy, Rights, SocialContainer, Terms } from './FooterElements'
 import {FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import SimpleForm from '../newsletter/subscribe'
+
+
+
+
 
 const Footer = () => {
   return (
@@ -10,16 +14,15 @@ const Footer = () => {
         <FooterHeader>No minimums. Absolutely free.</FooterHeader>
         <FooterText>Subscribe to stay updated</FooterText>
 
-        <Emailcontainer>
-            <EmailInput placeholder='Enter your email'/>
-            <EmailIcon><img alt='' src={SendIcon}/></EmailIcon>
-        </Emailcontainer>
+      
+        <SimpleForm/>
+    
 
         <NavSocialContainer>
 
             <NavContainer >
             <NavItems> <Link to='/' style={{color:'#fff', textDecoration:'none'}}>Home</Link></NavItems>
-            <NavItems> <Link to='/about-us' style={{color:'#fff', textDecoration:'none'}}>About Us</Link></NavItems>
+            <NavItems> <Link to='/why-nearpays' style={{color:'#fff', textDecoration:'none'}}>About Us</Link></NavItems>
             <NavItems> <Link to='/faq' style={{color:'#fff', textDecoration:'none'}}>Faq</Link></NavItems>
             <NavItems> <Link to='/contact-us' style={{color:'#fff', textDecoration:'none'}}>Contact Us</Link></NavItems>
             </NavContainer>

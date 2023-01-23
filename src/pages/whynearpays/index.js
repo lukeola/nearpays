@@ -1,7 +1,7 @@
 import React ,{useState}from 'react'
 import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
-import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne, SectionThree, SectionTwo, Text, ThreeHeader, ThreeText1, ThreeText2, Upheader, Upline, Uptext, WhyContainer } from './WhyElements'
+import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne,  SectionTwo, Text,  Upheader, Upline, Uptext, WhyContainer } from './WhyElements'
 import Bgimg from '../../images/bgimage.png'
 import Fourimg from '../../images/fourimage.png'
 import './why.css'
