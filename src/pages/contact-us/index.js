@@ -21,7 +21,7 @@ const ContactUs = () => {
       e.target.reset()
   };
 
-  const [message, setMessage] = useState('Your Name');
+  const [message, setMessage] = useState('');
 
   // 👇️ called every time input's value changes
   const handleChange = event => {

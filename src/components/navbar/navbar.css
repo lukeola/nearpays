@@ -4,23 +4,21 @@
     box-sizing: border-box;
 }
 
-#header {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
-
-}
 
 .header {
-    background-color: transparent;
+    background-color:#E8F3EB;
+    z-index: 999;
 }
 
 .header-bg {
     background-color: rgb(224,235,227, 0.9);
     height: 75px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.9s ease-in-out;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .navbar {
@@ -117,7 +115,7 @@
         top: 75px;
         transition: all 0.8s ease-in-out;
         width: 100%;
-        z-index: 5;
+        z-index: 999;
         text-align: center;
     }
 

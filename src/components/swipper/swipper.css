@@ -51,7 +51,7 @@
         overflow: hidden;
         max-width: 90%;
         height: 350px;
-        z-index: 5;
+        /* z-index: 5; */
         left: 5%;
        
       }

@@ -6,6 +6,7 @@ export const ContactContainer = styled.div`
     display: flex;
     height: 903px;
     background: #E0EBE3;
+   
 
     @media screen and (max-width: 769px) {
         flex-direction: column;

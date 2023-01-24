@@ -6,7 +6,7 @@ import Logo from '../../../src/images/nearpayslogo.png'
 const Navbar = () => {
 
 //************Mobile Responsive View*************/
-    const [Mobile, setMobile] = useState(false)
+const [Mobile, setMobile] = useState(false)
 
 //***************change nav color when scrolling***************/
 
@@ -31,8 +31,8 @@ useEffect(() => {
 
 
   return (
-    <header id="header" className={color ? "header-bg" : "header"}>
-    <nav className='navbar'>
+    <div className={color ? "header-bg" : "header"} >
+    <nav className='navbar' >
     <Link to="/" className='logo'>
     <img src={Logo}  alt='NearPays'/>
     </Link>
@@ -59,7 +59,7 @@ useEffect(() => {
             {Mobile ? ( <i className='fas fa-times'/>) : (<i className='fas fa-bars' />)}
         </button>
     </nav>
-    </header>
+    </div>
   )
 }
 
