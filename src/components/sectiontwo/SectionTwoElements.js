@@ -169,7 +169,7 @@ export const BlueLine = styled.div`
 
     @media screen and (max-width: 1024px) {
         position: absolute;
-        margin-top: 250px;
+        margin-top: 265px;
         left: 60%;
     }
 
