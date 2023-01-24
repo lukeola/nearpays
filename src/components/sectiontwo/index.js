@@ -42,7 +42,7 @@ const SectionTwo = () => {
         </Box2>
       </BoxItems>
 
-      <BoxItems data-aos="fade-left">
+      <BoxItems data-aos="fade-up">
         <Box3>
         <BoxNumber>3</BoxNumber>
         <BoxHeader>Pay when you want, how you want it</BoxHeader>
