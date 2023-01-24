@@ -32,9 +32,9 @@ export const HeroHeader = styled.div`
 
 
     @media screen and (max-width: 1024px) {
-        font-size: 70px;
+        font-size: 40px;
     }
-    
+
     @media screen and (max-width: 769px) {
         font-size: 30px;
         width: 90%;
