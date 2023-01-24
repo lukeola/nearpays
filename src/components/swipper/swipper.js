@@ -9,20 +9,24 @@ import FourthPhoto from '../../images/vic.jpg'
 const color = ["#0088FE", "#00C49F", "#FFBB28"];
 const delay = 3000;
 
-const colors= [{
-    photo: FirstPhoto
+const images= [{
+    photo: FirstPhoto,
+    id:1
    
 },
 {
-    photo: SecondPhoto
+    photo: SecondPhoto,
+    id:2
     
 },
 {
-    photo: ThirdPhoto
+    photo: ThirdPhoto,
+    id:3
     
 },
 {
-    photo: FourthPhoto
+    photo: FourthPhoto,
+    id:4
     
 }
 
@@ -43,7 +47,7 @@ function Slideshow() {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -59,12 +63,13 @@ function Slideshow() {
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {colors.map((backgroundImage, index) => (
+        {images.map((backgroundImage, index) => (
+          <React.Fragment key={backgroundImage.id}>
           <div
             className="swipe"
-            key={index}
+            key={backgroundImage.index}
             style={{ backgroundImage}}
-          ><img src={backgroundImage.photo} alt='' style={{objectFit:'fill', height:'100%', width:'100%', borderRadius:'5px', marginTop:'0px'}}/></div>
+          ><img src={backgroundImage.photo} alt='' style={{objectFit:'fill', height:'100%', width:'100%', borderRadius:'5px', marginTop:'0px'}}/></div></React.Fragment>
         ))}
       </div>
 

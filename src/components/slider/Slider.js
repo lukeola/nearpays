@@ -25,14 +25,14 @@ export default function Slider() {
         }
     }
 
-    const moveDot = index => {
-        setSlideIndex(index)
-    }
+    // const moveDot = index => {
+    //     setSlideIndex(index)
+    // }
 
     return (
         <div className="container-slider">
-            {dataSlider.map((obj, index) => {
-                return (
+            {dataSlider.map((obj, index) => (
+                
                     <div
                     key={obj.id}
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
@@ -41,19 +41,20 @@ export default function Slider() {
                         src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.png`} alt=''
                         />
                     </div>
-                )
-            })}
+                 
+              
+            ))}
             <BtnSlider moveSlide={nextSlide} direction={"next"} />
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
-            <div className="container-dots">
+            {/* <div className="container-dots">
                 {Array.from({length: 3}).map((item, index) => (
-                    <div 
+                    <div
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>
                 ))}
-            </div>
+            </div> */}
         </div>
     )
 }

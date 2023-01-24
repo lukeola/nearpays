@@ -1,18 +1,18 @@
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
 
 const dataSlider = [
   {
-    id: uuidv4(),
+    id: 1,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id:2,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   },
   {
-    id: uuidv4(),
+    id: 3,
     title: "Lorem ipsum",
     subTitle: "Lorem"
   }
