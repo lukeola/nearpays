@@ -147,7 +147,7 @@ export const GreenLine = styled.div`
     @media screen and (max-width: 1024px) {
     margin-top: -70px;
     }
-    
+
     @media screen and (max-width: 769px) {
         position: absolute;
         width: 50%;
@@ -169,8 +169,8 @@ export const BlueLine = styled.div`
 
     @media screen and (max-width: 1024px) {
         position: absolute;
-        margin-top: 200px;
-        left: 90%;
+        margin-top: 250px;
+        left: 60%;
     }
 
     @media screen and (max-width: 769px) {
