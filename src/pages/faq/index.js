@@ -1,8 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Footer from '../../components/footer'
 import { FaqAnswer, FaqContainer, FaqHeader, Faqicons, Faqitems, FaqQuestion, Faqwrapper, LeftSide, Moretext, RightSide } from './FaqElements'
 import './faq.css'
 import Navbar from '../../components/navbar'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 const FaqSection = () => {
@@ -17,6 +19,11 @@ const FaqSection = () => {
     setSelected(i)
   }
 
+  useEffect(() => {
+    Aos.init({duration: 2000});
+    
+  }, []);
+
   return (
     
     <> 
@@ -28,10 +35,10 @@ const FaqSection = () => {
           </LeftSide>
 
           <RightSide>
-              <Faqwrapper>
+              <Faqwrapper data-aos='fade-up'>
               {data.map((item, i) => (
-                <React.Fragment key={item.Id} >
-                <Faqitems onClick={() => toggle(i)}>
+                <React.Fragment key={item.Id}  >
+                <Faqitems onClick={() => toggle(i)} data-aos='fade-up'>
                   <FaqQuestion onClick={() => toggle(i)} >{item.Question}</FaqQuestion>
                   <FaqAnswer className={selected === i ? 'content show' : 'content'}>{item.Answer}</FaqAnswer>
                   <Faqicons><span>{selected === i ? "-" : "+"}</span></Faqicons>
@@ -42,8 +49,11 @@ const FaqSection = () => {
           <Moretext>Have more questions? <a href='/contact-us' style={{textDecoration:'none', color:'#5DAF60'}}>Contact Us</a></Moretext>
           </RightSide>
     </FaqContainer>
-    <Footer/>
+    <div style={{position:'absolute', top:'1174px', width:'100%'}}>
+    <Footer />
+    </div>
     </>
+    
 
   )
 }

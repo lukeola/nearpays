@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
 import Logo from '../../../src/images/nearpayslogo.png'
@@ -23,6 +23,13 @@ const changeColor = () => {
 window.addEventListener('scroll', changeColor)
 
 //************************************************************ */
+
+//Scrolls to top o page when you click on a new page link//
+useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
     <header id="header" className={color ? "header-bg" : "header"}>
     <nav className='navbar'>

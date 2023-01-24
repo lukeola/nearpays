@@ -8,10 +8,12 @@ export const SectionThreeContainer = styled.div`
     display: flex;
     gap: 15%;
     background: #E0EBE3; 
+    display: none;
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
         height: 668px;
+        display: flex;
     }
 `
 export const Leftside = styled.div`

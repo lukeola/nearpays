@@ -4,10 +4,11 @@ import styled from "styled-components";
 export const FaqContainer = styled.div`
     display: flex;
     width: 100%;
-    position: relative;
+    position: absolute;
     height: 1174px;
-    top: 0px;
+    margin-top: 0;
     background: #E0EBE3;
+    z-index: 6;
 
     @media screen and (max-width: 769px) {
         flex-direction: column;

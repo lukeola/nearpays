@@ -37,8 +37,8 @@ export default function Slider() {
                     key={obj.id}
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
-                        <img 
-                        src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} alt=''
+                        <img style={{objectFit:'cover', height:'100%', width:'100%'}}
+                        src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.png`} alt=''
                         />
                     </div>
                 )
@@ -47,7 +47,7 @@ export default function Slider() {
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
             <div className="container-dots">
-                {Array.from({length: 5}).map((item, index) => (
+                {Array.from({length: 3}).map((item, index) => (
                     <div 
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}

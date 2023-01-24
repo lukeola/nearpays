@@ -6,11 +6,11 @@ export const HeroContainer = styled.div`
     width: 100%;
     height: 1069px;
     left: 0px;
-    /* top: -160px; */
     background: #E8F3EB;
+    overflow: hidden;
 
     @media screen and (max-width: 769px) {
-        height: 696px;
+        height: 596px;
         overflow: hidden;
     }
 `
@@ -23,12 +23,14 @@ export const HeroHeader = styled.div`
     line-height: 100%;
     text-align: center;
     color: #2E312F;
-    padding-top: 156px;
+    padding-top: 146px;
+    margin-bottom: 20px;
 
     @media screen and (max-width: 769px) {
         font-size: 30px;
         width: 90%;
         margin-left: 5%;
+        padding-top: 106px;
     }
 `
 export const HeroImg = styled.div`

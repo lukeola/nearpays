@@ -3,6 +3,7 @@ import { BottomLinks,FooterContainer, FooterHeader, FooterText, NavContainer, Na
 import {FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import SimpleForm from '../newsletter/subscribe'
+import AnimatedText from 'react-animated-text-content';
 
 
 
@@ -11,7 +12,28 @@ import SimpleForm from '../newsletter/subscribe'
 const Footer = () => {
   return (
     <FooterContainer>
-        <FooterHeader>No minimums. Absolutely free.</FooterHeader>
+        <FooterHeader>
+        <AnimatedText
+        type="words" // animate words or chars
+        animation={{
+          x: '200px',
+          y: '-20px',
+          scale: 1.1,
+          ease: 'ease-in-out',
+        }}
+        animationType="wave"
+        interval={0.06}
+        duration={0.8}
+        tag="p"
+        className="animated-paragraph"
+        includeWhiteSpaces
+        threshold={0.1}
+        rootMargin="20%"
+      >
+        No minimums. Absolutely free.
+      </AnimatedText>
+        
+        </FooterHeader>
         <FooterText>Subscribe to stay updated</FooterText>
 
       

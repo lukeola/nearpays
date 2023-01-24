@@ -1,10 +1,14 @@
-import React ,{useState}from 'react'
+import React ,{useState, useEffect}from 'react'
 import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
 import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne,  SectionTwo, Text,  Upheader, Upline, Uptext, WhyContainer } from './WhyElements'
 import Bgimg from '../../images/bgimage.png'
 import Fourimg from '../../images/fourimage.png'
 import './why.css'
+import AnimatedText from 'react-animated-text-content';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 const WhyNearpays = () => {
 
   const [selected, setSelected] = useState(null)
@@ -17,11 +21,37 @@ const WhyNearpays = () => {
     setSelected(i)
   }
 
+  useEffect(() => {
+    Aos.init({duration: 2000});
+    
+  }, []);
+
   return (
     <WhyContainer>
       <Navbar/>
-      <SectionOne>
-      <Header>Nearpays is a full-service financial payment platform</Header>
+      <SectionOne id='whynearpays'>
+      <Header>
+      <AnimatedText
+        type="words" // animate words or chars
+        animation={{
+          x: '200px',
+          y: '-20px',
+          scale: 1.1,
+          ease: 'ease-in-out',
+        }}
+        animationType="bounce"
+        interval={0.06}
+        duration={0.8}
+        tag="p"
+        className="animated-paragraph"
+        includeWhiteSpaces
+        threshold={0.1}
+        rootMargin="20%"
+      >
+        Nearpays is a full-service financial payment platform
+      </AnimatedText>
+      
+      </Header>
       <Text>
       Nearpays is a full-service financial payment platform that acts as an end-to-end financial service for all our clients. We have created various features to simplify online payments as much as possible, based on the principle that payments should be seamless. We have also developed a way to put point-of-sale transactions back into the hands of our users. The experience is simple, on the go, and comes with no extra bank charges for all our users.
       </Text>
@@ -38,19 +68,63 @@ const WhyNearpays = () => {
       </SectionThree> */}
 
       <SectionFour>
-        <SectionFourUp>
-          <Upheader>The Next Generation Payment Method</Upheader>
+        <SectionFourUp data-aos='fade-right'>
+          <Upheader>
+          <AnimatedText
+        type="words" // animate words or chars
+        animation={{
+          x: '200px',
+          y: '-20px',
+          scale: 1.1,
+          ease: 'ease-in-out',
+        }}
+        animationType="bounce"
+        interval={0.06}
+        duration={0.8}
+        tag="p"
+        className="animated-paragraph"
+        includeWhiteSpaces
+        threshold={0.1}
+        rootMargin="20%"
+      >
+        The Next Generation Payment Method
+      </AnimatedText>
+
+      </Upheader>
           <Uptext>
             Making payments should be easy, smart and seamless. Thats’s what we are all about. Access and make payments globally without having to worry about how you money moves. At Nearpays, stay up to date and follow all your transactions across diferent banks in one place
           </Uptext>
           <Upline/>
         </SectionFourUp>
 
-        <SectionFourDown>
+        <SectionFourDown data-aos="fade-up"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <DownImage>
             <img src={Fourimg} alt='' style={{objectFit:'fill', width:'100%', height:'100%'}}/>
           </DownImage>
-          <Downheader>Take Control Of Your Payments</Downheader>
+          <Downheader>
+          <AnimatedText
+        type="words" // animate words or chars
+        animation={{
+          x: '200px',
+          y: '-20px',
+          scale: 1.1,
+          ease: 'ease-in-out',
+        }}
+        animationType="wave"
+        interval={0.06}
+        duration={0.8}
+        tag="p"
+        className="animated-paragraph"
+        includeWhiteSpaces
+        threshold={0.1}
+        rootMargin="20%"
+      >
+        Take Control Of Your Payments
+      </AnimatedText>
+          </Downheader>
           <Downtext>
             Let’s help you make your money work for you. This single integration payment platform gives you full control of your cards and up to date clarity of your funds. You shouldn’t break a sweat to make money and break even more managing your finances. Let Nearpays do that for you.
           </Downtext>
@@ -60,13 +134,13 @@ const WhyNearpays = () => {
 
       <SectionFive>
           <LeftSide>
-          <FiveHeader>WhyFaqs</FiveHeader>
+          <FiveHeader data-aos='fade-right'>WhyFaqs</FiveHeader>
           </LeftSide>
           <RightSide>
           <WhyFaqwrapper>
           {data.map((item, i) => (
             <React.Fragment key={item.Id}>
-            <WhyFaqitems>
+            <WhyFaqitems data-aos='fade-up'>
               <WhyFaqQuestion onClick={() => toggle(i)}>{item.Question}</WhyFaqQuestion>
               <WhyFaqAnswer className={selected === i ? 'why-content show' : 'why-content'}>{item.Answer}</WhyFaqAnswer>
               <WhyFaqicons><span>{selected === i ? "-" : "+"}</span></WhyFaqicons>

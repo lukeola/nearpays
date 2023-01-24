@@ -18,7 +18,7 @@ const SimpleForm = ({ status, message, className, style, onSubmitted }) => {
       {status === "sending" && <div style={{ color: "#fff" , marginTop:'40px', position:'absolute'}}>sending...</div>}
       {status === "error" && (
         <div
-          style={{ color: "red" }}
+          style={{ color: "red", position:'absolute', top:'40px' }}
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
