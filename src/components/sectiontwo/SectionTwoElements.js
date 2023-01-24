@@ -143,6 +143,11 @@ export const GreenLine = styled.div`
     left: 18%;
     margin-top: -50px;
 
+
+    @media screen and (max-width: 1024px) {
+    margin-top: -70px;
+    }
+    
     @media screen and (max-width: 769px) {
         position: absolute;
         width: 50%;
@@ -152,9 +157,7 @@ export const GreenLine = styled.div`
         transform: rotate(90.52deg);
 }
 
-@media screen and (max-width: 1024px) {
-    margin-top: -70px;
-    }
+
 
 `
 export const BlueLine = styled.div`
@@ -163,6 +166,12 @@ export const BlueLine = styled.div`
     height: 131px;
     left: 60%;
     margin-top: 225px;
+
+    @media screen and (max-width: 1024px) {
+        position: absolute;
+        margin-top: 200px;
+        left: 90%;
+    }
 
     @media screen and (max-width: 769px) {
         position: absolute;
@@ -173,10 +182,6 @@ export const BlueLine = styled.div`
      
         transform:  rotate(140deg) ;
       
-    @media screen and (max-width: 1024px) {
-        position: absolute;
-        margin-top: 200px;
-        left: 90%;
-    }
+
 }
 `

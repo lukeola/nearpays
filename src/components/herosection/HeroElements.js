@@ -30,6 +30,11 @@ export const HeroHeader = styled.div`
     padding-top: 146px;
     margin-bottom: 20px;
 
+
+    @media screen and (max-width: 1024px) {
+        font-size: 70px;
+    }
+    
     @media screen and (max-width: 769px) {
         font-size: 30px;
         width: 90%;
@@ -37,9 +42,7 @@ export const HeroHeader = styled.div`
         padding-top: 106px;
     }
 
-    @media screen and (max-width: 1024px) {
-        font-size: 70px;
-    }
+
 `
 export const HeroImg = styled.div`
     height: 665px;
