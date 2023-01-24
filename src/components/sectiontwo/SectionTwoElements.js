@@ -152,13 +152,17 @@ export const GreenLine = styled.div`
         transform: rotate(90.52deg);
 }
 
+@media screen and (max-width: 1024px) {
+    margin-top: -70px;
+    }
+
 `
 export const BlueLine = styled.div`
     position: absolute;
     width: 25%;
     height: 131px;
     left: 60%;
-    margin-top: 210px;
+    margin-top: 225px;
 
     @media screen and (max-width: 769px) {
         position: absolute;
@@ -169,6 +173,10 @@ export const BlueLine = styled.div`
      
         transform:  rotate(140deg) ;
       
-
+    @media screen and (max-width: 1024px) {
+        position: absolute;
+        margin-top: 200px;
+        left: 90%;
+    }
 }
 `
