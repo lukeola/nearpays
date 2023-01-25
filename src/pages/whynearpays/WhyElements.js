@@ -29,6 +29,12 @@ export const Header = styled.div`
     color: #2E312F;
     top: 162px;
 
+    @media screen and (max-width: 1024px) {
+        font-size: 38px;
+        /* width: 35%; */
+       
+    }
+
     @media screen and (max-width: 769px) {
         font-size: 24px;
         width: 70%;
@@ -49,6 +55,12 @@ export const Text = styled.div`
     line-height: 158%;
     color: #6A706C;
     top: 174px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        width: 35%;
+       
+    }
 
     @media screen and (max-width: 769px) {
         position: absolute;
@@ -319,6 +331,11 @@ export const FiveHeader = styled.div`
     color: #FFFFFF;
     text-align: center;
 
+    @media screen and (max-width: 1024px) {
+        font-size: 54px;
+       
+    }
+
     @media screen and (max-width: 769px) {
         font-size: 32px;
         top: 48px;
@@ -389,6 +406,12 @@ export const WhyFaqicons = styled.div`
     left: 50%;
     color: #fff;
     cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+        left: 20%;
+       
+    
+    }
 
     @media screen and (max-width: 769px) {
         position: absolute;

@@ -1,7 +1,7 @@
 import React, { useRef , useState, useEffect} from 'react'
 import Footer from '../../components/footer'
 import { ContactButton, ContactContainer, ContactForm, ContactHeader, ContactInput, ContactLeft, ContactRight, ContactSocial, ContactText, ContactTextArea } from './ContactElements'
-import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import Navbar from '../../components/navbar'
 import emailjs from '@emailjs/browser';
 import Aos from 'aos'
@@ -67,9 +67,9 @@ const ContactUs = () => {
           While  we’re good with smoke signals, there are easier ways to get in touch.
           </ContactText>
           <ContactSocial>
-            <a href='https://twitter.com/nearpays'><FaTwitter/></a>
-            <a href='https://linkedin.com/company/89969774'><FaLinkedin/></a>
-            <a href='https://facebook.com/nearpays'> <FaFacebook/></a>
+            <a href='https://twitter.com/nearpays' style={{textDecoration:'none', color:'#5DAF60'}}><FaTwitter/></a>
+            <a href='https://linkedin.com/company/89969774' style={{textDecoration:'none', color:'#5DAF60'}}><FaLinkedin/></a>
+            <a href='https://instagram.com/nearpays' style={{textDecoration:'none', color:'#5DAF60'}}> <FaInstagram/></a>
           </ContactSocial>
         </ContactLeft>
         <ContactRight>

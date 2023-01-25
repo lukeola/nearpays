@@ -1,6 +1,6 @@
 import React from 'react'
 import { BottomLinks,FooterContainer, FooterHeader, FooterText, NavContainer, NavItems, NavSocialContainer, Privacy, Rights, SocialContainer, Terms } from './FooterElements'
-import {FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
+import {FaTwitter,  FaLinkedin, FaInstagram} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import SimpleForm from '../newsletter/subscribe'
 import AnimatedText from 'react-animated-text-content';
@@ -52,7 +52,7 @@ const Footer = () => {
             <SocialContainer>
             <NavItems><a href='https://twitter.com/nearpays' style={{textDecoration:'none', color:'#5DAF60'}}><FaTwitter/></a></NavItems>
             <NavItems><a href='https://linkedin.com/company/89969774' style={{textDecoration:'none',color:'#5DAF60'}}><FaLinkedin/></a></NavItems>
-            <NavItems><a href='https://facebook.com/nearpays' style={{textDecoration:'none',color:'#5DAF60'}}><FaFacebookF/></a></NavItems> 
+            <NavItems><a href='https://instagram.com/nearpays' style={{textDecoration:'none',color:'#5DAF60'}}><FaInstagram/></a></NavItems> 
             </SocialContainer>
 
         </NavSocialContainer>
