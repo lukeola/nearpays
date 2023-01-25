@@ -1,6 +1,6 @@
 import React ,{useState, useEffect}from 'react'
 import Footer from '../../components/footer'
-import Navbar from '../../components/navbar'
+// import Navbar from '../../components/navbar'
 import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne,  SectionTwo, Text,  Upheader, Upline, Uptext, WhyContainer } from './WhyElements'
 import Bgimg from '../../images/bgimage.png'
 import Fourimg from '../../images/fourimage.png'
@@ -8,6 +8,7 @@ import './why.css'
 import AnimatedText from 'react-animated-text-content';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import WhyNavbar from './navbar'
 
 const WhyNearpays = () => {
 
@@ -26,10 +27,11 @@ const WhyNearpays = () => {
     
   }, []);
 
+
   return (
     <WhyContainer>
-      <Navbar/>
-      <SectionOne id='whynearpays'>
+      <WhyNavbar/>
+      <SectionOne>
       <Header>
       <AnimatedText
         type="words" // animate words or chars

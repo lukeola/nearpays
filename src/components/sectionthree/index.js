@@ -1,30 +1,69 @@
-import React from 'react'
-import { LefsideImg, Leftside, Leftsidebg, Rightside, RightsideHeading, RightsideText, SectionThreeContainer } from './SectionThreeElements'
-import Iphone from '../../images/phone.png'
-// import Slide1 from '../../images/slide1.png'
+import React from "react";
+import './sectionthree.css'
+import ThreeSlideOne from "./ThreeSlideOne";
+import ThreeSlideThree from "./ThreeSlideThree";
+import ThreeSlideTwo from "./ThreeSlideTwo";
 
 
-const SectionThree = () => {
+
+
+const delay = 3000;
+
+const Sections= [
+ 
+  <ThreeSlideOne></ThreeSlideOne>,
+  <ThreeSlideTwo></ThreeSlideTwo>,
+  <ThreeSlideThree></ThreeSlideThree>
+
+];
+
+
+function SectionThree() {
+  const [index, setIndex] = React.useState(0);
+  const timeoutRef = React.useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === Sections.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
   return (
-    <SectionThreeContainer>
-      <Leftside>
-        <Leftsidebg>
-          <LefsideImg>
-            <img src={Iphone} alt='' style={{objectFit:'fill', height:'1005', width:'100%'}}/>
-          </LefsideImg>
-        </Leftsidebg>
-      </Leftside>
+    <div className="threeslideshow">
+      <div
+        className="threeslideshowSlider"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {Sections.map((section, index) => (
+          <React.Fragment key={section.id}>
+          <div
+            className="threeswipe"
+            key={section.index}
+          
+          >
+           {section}
+          </div></React.Fragment>
+          
+        ))}
+      </div>
 
-      <Rightside>
-        <RightsideHeading>Virtual POS</RightsideHeading>
-        <RightsideText>
-        Charge and debit NFC-enabled cards with your smartphone
-        Steer your business towards a new level of financial transactions
-   (Your smartphone becomes your POS Terminal)
-        </RightsideText>
-      </Rightside> 
-    </SectionThreeContainer>
-  )
+    </div>
+  );
 }
 
-export default SectionThree
+export default SectionThree;

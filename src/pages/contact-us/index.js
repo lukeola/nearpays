@@ -1,9 +1,12 @@
-import React, { useRef , useState} from 'react'
+import React, { useRef , useState, useEffect} from 'react'
 import Footer from '../../components/footer'
 import { ContactButton, ContactContainer, ContactForm, ContactHeader, ContactInput, ContactLeft, ContactRight, ContactSocial, ContactText, ContactTextArea } from './ContactElements'
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import Navbar from '../../components/navbar'
 import emailjs from '@emailjs/browser';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import AnimatedText from 'react-animated-text-content'
 
 const ContactUs = () => {
 
@@ -28,20 +31,45 @@ const ContactUs = () => {
     setMessage(event.target.value);
   };
 
+  useEffect(() => {
+    Aos.init({duration: 2000});
+    
+  }, []);
+
   
   return (
     <>
     <Navbar/>
     <ContactContainer>
         <ContactLeft>
-          <ContactHeader>We’d love to hear from you.</ContactHeader>
+          <ContactHeader>
+          <AnimatedText
+        type="words" // animate words or chars
+        animation={{
+          x: '200px',
+          y: '-20px',
+          scale: 1.1,
+          ease: 'ease-in-out',
+        }}
+        animationType="bounce"
+        interval={0.06}
+        duration={0.8}
+        tag="p"
+        className="animated-paragraph"
+        includeWhiteSpaces
+        threshold={0.1}
+        rootMargin="20%"
+      >
+        We’d love to hear from you.
+      </AnimatedText>
+        </ContactHeader>
           <ContactText>
           While  we’re good with smoke signals, there are easier ways to get in touch.
           </ContactText>
           <ContactSocial>
-            <FaTwitter/>
-            <FaLinkedin/>
-            <FaFacebook/>
+            <a href='https://twitter.com/nearpays'><FaTwitter/></a>
+            <a href='https://linkedin.com/company/89969774'><FaLinkedin/></a>
+            <a href='https://facebook.com/nearpays'> <FaFacebook/></a>
           </ContactSocial>
         </ContactLeft>
         <ContactRight>

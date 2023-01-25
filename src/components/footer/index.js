@@ -50,9 +50,9 @@ const Footer = () => {
             </NavContainer>
 
             <SocialContainer>
-            <NavItems><a href='twitter.com' style={{textDecoration:'none', color:'#5DAF60'}}><FaTwitter/></a></NavItems>
-            <NavItems><a href='linkedin.com' style={{textDecoration:'none',color:'#5DAF60'}}><FaLinkedin/></a></NavItems>
-            <NavItems><a href='facebook.com' style={{textDecoration:'none',color:'#5DAF60'}}><FaFacebookF/></a></NavItems> 
+            <NavItems><a href='https://twitter.com/nearpays' style={{textDecoration:'none', color:'#5DAF60'}}><FaTwitter/></a></NavItems>
+            <NavItems><a href='https://linkedin.com/company/89969774' style={{textDecoration:'none',color:'#5DAF60'}}><FaLinkedin/></a></NavItems>
+            <NavItems><a href='https://facebook.com/nearpays' style={{textDecoration:'none',color:'#5DAF60'}}><FaFacebookF/></a></NavItems> 
             </SocialContainer>
 
         </NavSocialContainer>

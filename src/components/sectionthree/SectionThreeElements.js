@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 
 export const SectionThreeContainer = styled.div`
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 706px;
     display: flex;
     gap: 15%;
     background: #E0EBE3; 
-    display: none;
+    
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
@@ -27,9 +27,9 @@ export const Leftside = styled.div`
 export const LefsideImg = styled.div`
     position: absolute;
     width: 90%;
-    height: 425.79px;
+    height: 405.79px;
     left: 5%;
-    top: 140px;
+    top: 120px;
 
     @media screen and (max-width: 769px) {
         top: 51px;
@@ -39,7 +39,7 @@ export const LefsideImg = styled.div`
 export const Leftsidebg = styled.div`
     position: absolute;
     width: 38%;
-    height: 594px;
+    height: 544px;
     left: 8%;
     top: 56px;
     background: #C1D3C6;
@@ -80,14 +80,15 @@ export const RightsideHeading = styled.div`
         
     }
 `
-export const RightsideText = styled.div`
-    width: 60%;
+export const RightsideText = styled.p`
+    width: 50px;
     font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 210%;
     color: #2E312F;
+    flex-wrap: wrap;
     
    
     

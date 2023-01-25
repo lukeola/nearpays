@@ -5,8 +5,8 @@
 }
 
 
-.header {
-    background-color:#E8F3EB;
+.whyheader {
+    background-color:transparent;
     z-index: 999;
 }
 
@@ -113,7 +113,7 @@
         backdrop-filter: blur(4px);
         border-radius: 13px;
         top: 75px;
-        transition: all 0.8s ease-in-out;
+        transition: all 0.4s ease-in-out;
         width: 100%;
         z-index: 999;
         text-align: center;
@@ -134,7 +134,7 @@
         width: 50%;
         margin-left: 25%;
         border-radius: 10px;
-        transition: all 0.9s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 
     #register-button {

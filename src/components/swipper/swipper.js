@@ -6,12 +6,14 @@ import ThirdPhoto from '../../images/amaka2.jpg'
 import FourthPhoto from '../../images/vic.jpg'
 
 
+
 const color = ["#0088FE", "#00C49F", "#FFBB28"];
 const delay = 3000;
 
 const images= [{
     photo: FirstPhoto,
     id:1
+    
    
 },
 {
@@ -31,6 +33,7 @@ const images= [{
 }
 
 ];
+
 
 function Slideshow() {
   const [index, setIndex] = React.useState(0);
@@ -70,6 +73,7 @@ function Slideshow() {
             key={backgroundImage.index}
             style={{ backgroundImage}}
           ><img src={backgroundImage.photo} alt='' style={{objectFit:'fill', height:'100%', width:'100%', borderRadius:'5px', marginTop:'0px'}}/></div></React.Fragment>
+          
         ))}
       </div>
 

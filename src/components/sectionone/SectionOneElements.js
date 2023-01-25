@@ -61,6 +61,8 @@ export const BoxContainer = styled.div`
         flex-direction: column;
         gap: 285px;
         top: 163px;
+        width: 90%;
+        margin-left: 5%;
     }
 
 `
@@ -119,6 +121,7 @@ export const Box1 = styled.div`
 
     @media screen and (max-width: 769px) {
         height: 267px;
+        left: 5%;
     }
 `
 export const Box1bg = styled.div`
@@ -132,6 +135,7 @@ export const Box1bg = styled.div`
 
     @media screen and (max-width: 769px) {
         height: 270px;
+        left: 7%;
     }
 `
 export const Box2 = styled.div`
@@ -147,6 +151,8 @@ export const Box2 = styled.div`
 
     @media screen and (max-width: 769px) {
         height: 267px;
+        transform: none;
+        left: 5%;
     }
 `
 export const Box2bg = styled.div`
@@ -161,6 +167,8 @@ export const Box2bg = styled.div`
 
     @media screen and (max-width: 769px) {
         height: 270px;
+        transform: none;
+        left: 7%;
     }
 `
 export const Box3 = styled.div`
@@ -177,6 +185,7 @@ export const Box3 = styled.div`
     @media screen and (max-width: 769px) {
         height: 267px;
         transform: none;
+        left: 5%;
     }
 `
 export const Box3bg = styled.div`
@@ -192,5 +201,6 @@ export const Box3bg = styled.div`
     @media screen and (max-width: 769px) {
         height: 270px;
         transform: none;
+        left: 7%;
     }
 `

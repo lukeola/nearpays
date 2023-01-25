@@ -7,6 +7,7 @@ export const FooterContainer = styled.div`
     background: #080808;
 
 
+
     @media screen and (max-width: 769px) {
         height: 551px;
     }
@@ -23,8 +24,13 @@ export const FooterHeader = styled.div`
     text-align: center;
     color: #fff;
 
+    @media screen and (max-width: 1024px) {
+      
+        font-size: 42px;
+       
 
-    
+    }
+
     @media screen and (max-width: 769px) {
         width: 80%;
         margin-left: 10%;

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import './navbar.css'
-import Logo from '../../../src/images/nearpayslogo.png'
+import './whynavbar.css'
+import Logo from '../../../../src/images/nearpayslogo.png'
 
-const Navbar = () => {
+const WhyNavbar = () => {
 
 //************Mobile Responsive View*************/
 const [Mobile, setMobile] = useState(false)
@@ -31,7 +31,7 @@ useEffect(() => {
 
 
   return (
-    <div className={color ? "header-bg" : "header"} >
+    <div className={color ? "header-bg" : "whyheader"} >
     <nav className='navbar' >
     <Link to="/" className='logo'>
     <img src={Logo}  alt='NearPays'/>
@@ -63,4 +63,4 @@ useEffect(() => {
   )
 }
 
-export default Navbar
+export default WhyNavbar
