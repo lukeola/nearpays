@@ -8,10 +8,17 @@ export const FaqContainer = styled.div`
     height: 1174px;
     margin-top: 0;
     background: #E0EBE3;
-    z-index: 6;
+  
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
+        height: 1474px;
+
+    }
+
+    @media screen and (max-width: 555px) {
+    
+      
 
     }
 `
@@ -70,7 +77,7 @@ export const Faqitems = styled.div`
     flex-direction: column;
     width: 100%;
     border-radius: 16px;
-    padding: 24px 38px 14px 18px;
+    padding: 24px 28px 14px 18px;
     background: #D3E0D7;
     cursor: pointer;
  
@@ -78,6 +85,11 @@ export const Faqitems = styled.div`
     @media screen and (max-width: 769px) {
         width: 95%;
         left: 2.5%;
+
+    }
+
+    @media screen and (max-width: 555px) {
+        padding: 14px 28px 4px 18px;
 
     }
 `
@@ -101,6 +113,8 @@ export const Faqicons = styled.div`
     color: #2E312F;
     cursor: pointer;
     top: 15px;
+    text-align: right;
+    justify-content: end;
 
     @media screen and (max-width: 769px) {
         
@@ -116,7 +130,7 @@ export const Moretext =styled.div`
     top: 36px;
 
     @media screen and (max-width: 769px) {
-        top: 1096px;
+        /* top: 1096px; */
 
     }
 `
