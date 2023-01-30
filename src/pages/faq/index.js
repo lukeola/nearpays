@@ -5,6 +5,7 @@ import './faq.css'
 import Navbar from '../../components/navbar'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { IconQuestionWrapper } from '../whynearpays/WhyElements'
 
 
 const FaqSection = () => {
@@ -39,9 +40,11 @@ const FaqSection = () => {
               {data.map((item, i) => (
                 <React.Fragment key={item.Id}  >
                 <Faqitems onClick={() => toggle(i)} data-aos='fade-up'>
+                <IconQuestionWrapper>
                   <FaqQuestion onClick={() => toggle(i)} >{item.Question}</FaqQuestion>
-                  <FaqAnswer className={selected === i ? 'content show' : 'content'}>{item.Answer}</FaqAnswer>
                   <Faqicons><span>{selected === i ? "-" : "+"}</span></Faqicons>
+                  </IconQuestionWrapper>
+                  <FaqAnswer className={selected === i ? 'content show' : 'content'}>{item.Answer}</FaqAnswer>
                 </Faqitems>
                 </React.Fragment>
               ))}

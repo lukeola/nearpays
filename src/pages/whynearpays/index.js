@@ -1,7 +1,7 @@
 import React ,{useState, useEffect}from 'react'
 import Footer from '../../components/footer'
 // import Navbar from '../../components/navbar'
-import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne,  SectionTwo, Text,  Upheader, Upline, Uptext, WhyContainer } from './WhyElements'
+import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne,  SectionTwo, Text,  Upheader, Upline, Uptext, WhyContainer, IconQuestionWrapper } from './WhyElements'
 import Bgimg from '../../images/bgimage.png'
 import Fourimg from '../../images/fourimage.png'
 import './why.css'
@@ -143,9 +143,12 @@ const WhyNearpays = () => {
           {data.map((item, i) => (
             <React.Fragment key={item.Id}>
             <WhyFaqitems data-aos='fade-up'>
+            <IconQuestionWrapper>
               <WhyFaqQuestion onClick={() => toggle(i)}>{item.Question}</WhyFaqQuestion>
-              <WhyFaqAnswer className={selected === i ? 'why-content show' : 'why-content'}>{item.Answer}</WhyFaqAnswer>
               <WhyFaqicons><span>{selected === i ? "-" : "+"}</span></WhyFaqicons>
+              </IconQuestionWrapper>
+              <WhyFaqAnswer className={selected === i ? 'why-content show' : 'why-content'}>{item.Answer}</WhyFaqAnswer>
+              
             </WhyFaqitems>
             </React.Fragment>
           ))}

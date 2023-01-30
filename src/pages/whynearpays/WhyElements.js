@@ -318,7 +318,7 @@ export const SectionFive = styled.div`
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
-        height: 690px;
+        height: 720px;
     }
 `
 export const FiveHeader = styled.div`
@@ -376,18 +376,22 @@ export const WhyFaqitems = styled.div`
     position: relative;
     height: auto;
     display: flex;
+    flex-direction: column;
     width: 100%;
     border-radius: 16px;
-    padding: 24px 48px 24px 48px;
+    padding: 24px 38px 4px 18px;
     background: #1E3125;
 
 
 ;
-
+`
+export const IconQuestionWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
 `
 export const WhyFaqQuestion = styled.div`
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: 98%;
     font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
@@ -400,26 +404,24 @@ export const WhyFaqQuestion = styled.div`
 `
 export const WhyFaqAnswer = styled.div`
     position: relative;
-    top:10px;
+
 
 `
 export const WhyFaqicons = styled.div`
     position: relative;
-    left: 5%;
+    width: 2%;
     color: #fff;
     cursor: pointer;
+    justify-content: flex-end;
+    text-align: right;
+    top: 20px;
 
-    @media screen and (max-width: 1024px) {
-        left: 20%;
-       
-    
-    }
 
-    @media screen and (max-width: 769px) {
+    /* @media screen and (max-width: 769px) {
         position: absolute;
         margin-left: 40%;
 
-    }
+    } */
 `
 export const WhyMoretext =styled.div`
     position: relative;

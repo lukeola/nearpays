@@ -55,6 +55,7 @@ export const BoxText = styled.div`
 
     @media screen and (max-width: 769px) {
         font-size: 14px;
+        width: 90%;
     }
 
 `
@@ -126,7 +127,6 @@ export const Box2 = styled.div`
     margin-top: 100px;
 
     @media screen and (max-width: 769px) {
-    
         margin-top: 10px;
     }
 `
@@ -136,7 +136,7 @@ export const Box3 = styled.div`
 
     @media screen and (max-width: 769px) {
     
-    margin-top: 60px;
+    margin-top: 10px;
 }
 `
 export const GreenLine = styled.div`
@@ -149,6 +149,7 @@ export const GreenLine = styled.div`
 
     @media screen and (max-width: 1024px) {
     margin-top: -70px;
+    display:none;
     }
 
     @media screen and (max-width: 769px) {
@@ -172,8 +173,9 @@ export const BlueLine = styled.div`
 
     @media screen and (max-width: 1024px) {
         position: absolute;
-        margin-top: 265px;
+        margin-top: 285px;
         left: 60%;
+        display:none;
     }
 
     @media screen and (max-width: 769px) {
