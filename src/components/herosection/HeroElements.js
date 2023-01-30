@@ -38,7 +38,6 @@ export const HeroHeader = styled.div`
     @media screen and (max-width: 1350px) {
         font-size: 60px;
     
-        
     }
 
 
@@ -53,6 +52,12 @@ export const HeroHeader = styled.div`
         width: 90%;
         margin-left: 5%;
         padding-top: 66px;
+    }
+
+    @media screen and (max-width: 474px) {
+        font-size: 30px;
+
+        
     }
 
 
