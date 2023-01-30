@@ -43,8 +43,8 @@ useEffect(() => {
                 <li>Why Nearpays</li>
             </Link>
 
-            <Link to="/faq" className='faq'>
-                <li>Faq</li>
+            <Link to="/faqs" className='faq'>
+                <li>Faqs</li>
             </Link>
 
             <Link to="/contact-us" className='contact'>
