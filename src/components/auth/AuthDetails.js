@@ -16,7 +16,7 @@ const AuthDetails = () => {
         })
     }, []);
 
-    const userSignOut = () => {
+    const userSignOut = (listen) => {
         signOut(auth).then(() => {
             console.log('sign out successful')
         }).catch(error => console.log(error))

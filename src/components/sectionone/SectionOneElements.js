@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import "../../fonts/circular-std-medium-500.ttf"
+import '../../index.css'
 
 export const SectionOneContainer = styled.div`
     position: relative;
@@ -14,7 +16,6 @@ export const SectionOneText = styled.div`
     position: absolute;
     width: 80%;
     margin-left: 10%;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -33,7 +34,6 @@ export const SectionOneHeader = styled.div`
     position: relative;
     width: 60%;
     margin-left: 10%;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -104,6 +104,7 @@ export const BoxText = styled.div`
     margin-top: 20px;
     width: 80%;
     margin-left: 10%;
+    font-family: 'fakt pro';
 
     @media screen and (max-width: 769px) {
         font-size: 14px;

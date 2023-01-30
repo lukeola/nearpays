@@ -32,7 +32,6 @@ export const ContactRight = styled.div`
 `
 export const ContactHeader = styled.div`
     width: 80%;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;

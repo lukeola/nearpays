@@ -45,7 +45,7 @@ const Footer = () => {
             <NavContainer >
             <NavItems> <Link to='/' style={{color:'#fff', textDecoration:'none'}}>Home</Link></NavItems>
             <NavItems> <Link to='/why-nearpays' style={{color:'#fff', textDecoration:'none'}}>About Us</Link></NavItems>
-            <NavItems> <Link to='/faq' style={{color:'#fff', textDecoration:'none'}}>Faq</Link></NavItems>
+            <NavItems> <Link to='/faqs' style={{color:'#fff', textDecoration:'none'}}>Faqs</Link></NavItems>
             <NavItems> <Link to='/contact-us' style={{color:'#fff', textDecoration:'none'}}>Contact Us</Link></NavItems>
             </NavContainer>
 
@@ -58,9 +58,9 @@ const Footer = () => {
         </NavSocialContainer>
 
         <BottomLinks>
-                <Rights>Nearpays.all rights reserved</Rights>
+                <Rights>Nearpays all rights reserved</Rights>
                 <Terms>Terms of service</Terms>
-                <Privacy>Privacy Policy</Privacy>
+                <Privacy><a href='/privacy-policy' style={{textDecoration:'none', color:'#929B95'}}>Privacy Policy</a></Privacy>
         </BottomLinks>
 
     </FooterContainer>

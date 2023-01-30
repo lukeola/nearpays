@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import "../../fonts/circular-std-medium-500.ttf"
+import '../../index.css'
 
 
 export const SectionThreeContainer = styled.div`
@@ -65,7 +67,6 @@ export const Rightside = styled.div`
 export const RightsideHeading = styled.div`
     width: 380px;
     height: 81px;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;

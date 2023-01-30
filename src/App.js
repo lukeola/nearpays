@@ -9,6 +9,7 @@ import FaqSection from './pages/faq';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import Profile from './pages/profile';
+import PrivacyPolicy from './pages/privacy-policy';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route exact path='/'  element={<Home/>} />
         <Route exact path='/why-nearpays'  element={<WhyNearpays/>} />
-        <Route exact path='/faq'  element={<FaqSection/>} />
+        <Route exact path='/faqs'  element={<FaqSection/>} />
         <Route exact path='/contact-us'  element={<ContactUs/>} />
         <Route exact path='/register'  element={<Register/>} />
         <Route exact path='/register-page-2'  element={<Register2/>} />
@@ -25,6 +26,7 @@ function App() {
         <Route exact path='/sign-in'  element={<SignIn/>} />
         <Route exact path='/sign-up'  element={<SignUp/>} />
         <Route exact path='/profile'  element={<Profile/>} />
+        <Route exact path='/privacy-policy'  element={<PrivacyPolicy/>} />
       </Routes>
       
     </Router>

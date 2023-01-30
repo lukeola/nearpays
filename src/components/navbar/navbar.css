@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Light";   /*Can be any text*/
+    src: local("circular-std-medium-500"),
+      url("../../fonts/circular-std-medium-500.ttf") format("truetype");
+  }
+  
+
 *{
     margin: 0;
     padding: 0;

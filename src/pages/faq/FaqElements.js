@@ -27,7 +27,7 @@ export const LeftSide = styled.div`
 `
 export const RightSide = styled.div`
     width: 50%;
-    margin-top: 190px;
+    margin-top: 80px;
 
     @media screen and (max-width: 769px) {
         top: 48px;
@@ -40,7 +40,6 @@ export const FaqHeader = styled.div`
     position: relative;
     width: 100%;
     top: 251px;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 500;
     font-size: 84px;
@@ -113,7 +112,7 @@ export const Moretext =styled.div`
     font-weight: 450;
     line-height: 36px;
     color: #2E312F;
-    top: 1036px;
+    top: 1026px;
 
     @media screen and (max-width: 769px) {
         top: 1096px;

@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
     max-width: 80%;
-    height: 650px;
+    height: 690px;
     z-index: 5;
     left: 10%;
     border-radius: 20px;
@@ -50,7 +50,7 @@
         position: relative;
         overflow: hidden;
         max-width: 90%;
-        height: 350px;
+        height: 370px;
         /* z-index: 5; */
         left: 5%;
        

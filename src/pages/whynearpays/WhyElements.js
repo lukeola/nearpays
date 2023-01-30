@@ -318,6 +318,7 @@ export const SectionFive = styled.div`
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
+        height: 690px;
     }
 `
 export const FiveHeader = styled.div`
@@ -399,11 +400,12 @@ export const WhyFaqQuestion = styled.div`
 `
 export const WhyFaqAnswer = styled.div`
     position: relative;
+    top:10px;
 
 `
 export const WhyFaqicons = styled.div`
     position: relative;
-    left: 50%;
+    left: 5%;
     color: #fff;
     cursor: pointer;
 
@@ -420,7 +422,7 @@ export const WhyFaqicons = styled.div`
     }
 `
 export const WhyMoretext =styled.div`
-    position: absolute;
+    position: relative;
     font-family: Circular Std;
     font-size: 20px;
     font-weight: 450;
@@ -429,7 +431,8 @@ export const WhyMoretext =styled.div`
     top: 532px;
 
     @media screen and (max-width: 769px) {
-        top: 602px;
+        top: 32px;
+        left: 3%;
 
     }
 

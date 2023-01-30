@@ -1,5 +1,6 @@
 import styled from "styled-components";
-
+import "../../fonts/circular-std-medium-500.ttf"
+import '../../index.css'
 
 export const HeroContainer = styled.div`
     position: relative;
@@ -10,10 +11,13 @@ export const HeroContainer = styled.div`
     overflow: hidden;
     margin-top: -1px;
 
-
+    @media screen and (max-width: 1213px) {
+        height: 1150px;
+        
+    }
 
     @media screen and (max-width: 769px) {
-        height: 556px;
+        height: 566px;
         overflow: hidden;
     }
 
@@ -28,17 +32,19 @@ export const HeroHeader = styled.div`
     line-height: 100%;
     text-align: center;
     color: #2E312F;
-    padding-top: 126px;
+    padding-top: 66px;
     margin-bottom: 20px;
 
 
     @media screen and (max-width: 1024px) {
         font-size: 70px;
+        font-weight: 700;
+        padding-top: 36px;
         
     }
 
     @media screen and (max-width: 769px) {
-        font-size: 30px;
+        font-size: 40px;
         width: 90%;
         margin-left: 5%;
         padding-top: 66px;

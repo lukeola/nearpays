@@ -28,7 +28,7 @@ const SectionTwo = () => {
      data-aos-easing="ease-in-sine">
         <Box1>
         <BoxNumber>1</BoxNumber>
-        <BoxHeader>Create a nearpay account</BoxHeader>
+        <BoxHeader>Create a nearpays account</BoxHeader>
         <BoxText>There are nerve-wracking means of payment and there is us, simplicity and ease. Create a Nearpays account and give you, your customers, and your business something you have never seen before.</BoxText>
         </Box1>      
       </BoxItems>

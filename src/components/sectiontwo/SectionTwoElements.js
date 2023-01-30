@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import "../../fonts/circular-std-medium-500.ttf"
+import '../../index.css'
+
 
 export const SectionTwoContainer = styled.div`
     height: 748px;
@@ -28,7 +31,6 @@ export const SectionTwoHeader = styled.div`
 
 `
 export const BoxHeader = styled.div`
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -49,6 +51,7 @@ export const BoxText = styled.div`
     line-height: 167.5%;
     color: #6A706C;
     width: 70%;
+    margin-top: 20px;
 
     @media screen and (max-width: 769px) {
         font-size: 14px;
