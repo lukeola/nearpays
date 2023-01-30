@@ -59,7 +59,7 @@ export const HeroHeader = styled.div`
 
     }
 
-    @media screen and (max-width: 994px) {
+    @media screen and (max-width: 355px) {
         font-size: 25px;
         
     }
