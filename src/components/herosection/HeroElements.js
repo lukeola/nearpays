@@ -12,7 +12,7 @@ export const HeroContainer = styled.div`
     margin-top: -1px;
 
     @media screen and (max-width: 1213px) {
-        height: 1150px;
+        height: 1000px;
         
     }
 
