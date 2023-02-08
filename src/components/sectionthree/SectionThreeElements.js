@@ -4,12 +4,13 @@ import '../../index.css'
 
 
 export const SectionThreeContainer = styled.div`
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 706px;
     display: flex;
     gap: 15%;
     background: #E0EBE3; 
+
     
 
     @media screen and (max-width: 769px) {

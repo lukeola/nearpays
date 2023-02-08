@@ -13,8 +13,10 @@
 
 
 .header {
-    background-color:#E8F3EB;
+    background-color: transparent;
     z-index: 999;
+    position: absolute;
+    width: 100%;
 }
 
 .header-bg {
@@ -44,22 +46,34 @@
     justify-content: flex-end;
     list-style: none;
     width: 75%;
-    color: #2E312F;
+    color: #fff;
 }
 
-.home,
+
 .contact,
 .faq,
 .whynearpays {
     text-decoration: none;
-    color: #2E312F;
+    color: #ffffff !important;
     font-size: 20px;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
 }
 
-#register-button {
+
+.contact-bg,
+.faq-bg,
+.whynearpays-bg {
+    text-decoration: none;
+    color: #043F2E;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#register-button{
     text-decoration: none;
     justify-content: center;
     align-items: center;
@@ -67,9 +81,25 @@
     padding: 10px 16px;
     width: 135px;
     height: 40px;
-    background: #043F2E;
+    background: #fff ;
     border-radius: 8px;
-    color: #fff;
+    color:#043F2E;
+    cursor: pointer;
+   
+    
+}
+
+#register-button-bg {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px 16px;
+    width: 135px;
+    height: 40px;
+    background-color: #043F2E;
+    border-radius: 8px;
+    color:#fff;
     cursor: pointer;
    
     

@@ -10,6 +10,7 @@ import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import Profile from './pages/profile';
 import PrivacyPolicy from './pages/privacy-policy';
+import Footer from './components/footer';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
         <Route exact path='/profile'  element={<Profile/>} />
         <Route exact path='/privacy-policy'  element={<PrivacyPolicy/>} />
       </Routes>
-      
+      <Footer/>
     </Router>
     );
 }

@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-import Footer from "../components/footer";
 import HeroSection from "../components/herosection";
 import Navbar from "../components/navbar";
 import SectionOne from "../components/sectionone";
@@ -20,7 +19,7 @@ const Home = () => {
 
     return (
         <>
-        <Navbar />
+        <Navbar/>
         <HeroSection />
         <SectionOne/>
        
@@ -29,9 +28,7 @@ const Home = () => {
         </div>
 
         <SectionThree/>
-      
-        
-        <Footer/>
+          
         </>
     )
 };

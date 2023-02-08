@@ -5,11 +5,11 @@ import '../../index.css'
 export const HeroContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 1069px;
+    height: 1273px;
     left: 0px;
     background: rgb(22,30,25);
     overflow: hidden;
-    margin-top: -1px;
+   
 
     @media screen and (max-width: 1213px) {
         height: 1000px;
@@ -49,9 +49,13 @@ export const HeroHeader = styled.div`
     line-height: 100%;
     text-align: center;
     color: #fff;
-    padding-top: 66px;
+    padding-top: 186px;
     margin-bottom: 20px;
     
+    @media screen and (max-width: 1419px) {
+        font-size: 65px;
+    
+    }
 
     @media screen and (max-width: 1350px) {
         font-size: 60px;
@@ -69,7 +73,7 @@ export const HeroHeader = styled.div`
         font-size: 40px;
         width: 90%;
         margin-left: 5%;
-        padding-top: 66px;
+        padding-top: 106px;
     }
 
     @media screen and (max-width: 474px) {
@@ -92,11 +96,17 @@ position: absolute;
     margin-top: 50px;
     z-index: 6;
 
-    @media screen and (max-width: 769px) {
-        width: 120%;
+    @media screen and (max-width: 1350px) {
         margin-left: 0;
         height: 400px;
         overflow: hidden;
-        margin-top: 80px;
+        top: 350px;
+        width: 80%;
+        left: 10%;
+    }
+
+    @media screen and (max-width: 769px) {
+       top: 150px;
+       height: 350px;
     }
 `

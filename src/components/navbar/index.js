@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
-import Logo from '../../../src/images/nearpayslogo.png'
+import Logoblack from '../../../src/images/nearpayslogo.png'
+import Logowhite from '../../images/Nearpayslogowhite.png'
 
 const Navbar = () => {
 
@@ -34,25 +35,25 @@ useEffect(() => {
     <div className={color ? "header-bg" : "header"} >
     <nav className='navbar' >
     <Link to="/" className='logo'>
-    <img src={Logo}  alt='NearPays'/>
+    <img src={color ? Logoblack : Logowhite}   alt='NearPays'/>
     </Link>
         
         <ul className={ Mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(false)}>
             
-            <Link to="/why-nearpays" className='whynearpays'>
+            <Link to="/why-nearpays" className={color ? "whynearpays-bg" : "whynearpays"} >
                 <li>Why Nearpays</li>
             </Link>
 
-            <Link to="/faqs" className='faq'>
+            <Link to="/faqs" className={color ? "faq-bg" : "faq"}>
                 <li>Faqs</li>
             </Link>
 
-            <Link to="/contact-us" className='contact'>
+            <Link to="/contact-us" className={color ? "contact-bg" : "contact"}>
                 <li>Contact Us</li>
             </Link>
 
             <Link to="/" >
-                <button id='register-button'>Register</button>
+                <button id={color ? "register-button-bg" : "register-button"}>Register</button>
             </Link>
         </ul>
         <button className='mobile-menu-icon' onClick={() => setMobile(!Mobile)}>

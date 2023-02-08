@@ -4,9 +4,11 @@ import '../../index.css'
 
 
 export const SectionTwoContainer = styled.div`
+    position: relative;
     height: 748px;
     width: 100%;
     background: #FFFFFF;
+
 
 
     @media screen and (max-width: 769px) {

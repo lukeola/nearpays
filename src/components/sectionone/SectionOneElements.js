@@ -7,6 +7,7 @@ export const SectionOneContainer = styled.div`
     width: 100%;
     height: 847px;
     background: #E8F3EB;
+   
 
     @media screen and (max-width: 769px) {
         height: 1250px;
