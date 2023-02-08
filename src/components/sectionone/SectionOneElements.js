@@ -6,7 +6,7 @@ export const SectionOneContainer = styled.div`
     position: relative;
     width: 100%;
     height: 847px;
-    background: #161E19;
+    background: #E8F3EB;
 
     @media screen and (max-width: 769px) {
         height: 1250px;
@@ -20,7 +20,7 @@ export const SectionOneText = styled.div`
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: #000;
     top: 100px;
 
     @media screen and (max-width: 769px) {
@@ -38,7 +38,7 @@ export const SectionOneHeader = styled.div`
     font-weight: 500;
     font-size: 48px;
     line-height: 61px;
-    color: #fff;
+    color: #000;
     top: 152px;
 
     @media screen and (max-width: 769px) {
@@ -51,7 +51,7 @@ export const SectionOneHeader = styled.div`
 `
 export const BoxContainer = styled.div`
     position: relative;
-    top: 220px;
+    top: 250px;
     display: flex;
     width: 80%;
     margin-left: 10%;
@@ -117,7 +117,7 @@ export const Box1 = styled.div`
     height: 310.1px;
     left: 10%;
     background: #45C6BE;
-    border-radius: 48px;
+    border-radius: 8px;
     z-index: 1;
 
     @media screen and (max-width: 769px) {
@@ -132,7 +132,7 @@ export const Box1bg = styled.div`
     top: 5px;
     left: 12%;
     background: #A0EFEA;
-    border-radius: 48px;
+    border-radius: 8px;
 
     @media screen and (max-width: 769px) {
         height: 270px;
@@ -144,9 +144,8 @@ export const Box2 = styled.div`
     width: 90%;
     height: 310.1px;
     left: 10%;
-    top: 10px;
     background: #80CFF5;
-    border-radius: 48px;
+    border-radius: 8px;
     transform: matrix(1, 0.01, 0, 1, 0, 0);
     z-index: 1;
 
@@ -160,11 +159,11 @@ export const Box2bg = styled.div`
     position: absolute;
     width: 90%;
     height: 313.38px;
-    top: 15px;
+    top: 5px;
     left: 12%;
     background: #B8E8FF;
-    border-radius: 48px;
-    transform: matrix(1, 0.01, 0, 1, 0, 0);
+    border-radius: 8px;
+    /* transform: matrix(1, 0.01, 0, 1, 0, 0); */
 
     @media screen and (max-width: 769px) {
         height: 270px;
@@ -176,11 +175,10 @@ export const Box3 = styled.div`
     position: absolute;
     width: 90%;
     height: 310.1px;
-    top: 20px;
     left: 10%;
     background: #9FE7C0;
-    border-radius: 48px;
-    transform: matrix(1, 0.06, -0.08, 1, 0, 0);
+    border-radius: 8px;
+    /* transform: matrix(1, 0.06, -0.08, 1, 0, 0); */
     z-index: 1;
 
     @media screen and (max-width: 769px) {
@@ -193,11 +191,11 @@ export const Box3bg = styled.div`
     position: absolute;
     width: 90%;
     height: 313.38px;
-    top: 25px;
+    top: 5px;
     left: 12%;
-    background: #DDFFED;
-    border-radius: 48px;
-    transform: matrix(1, 0.06, -0.08, 1, 0, 0);
+    background: #D8E9E0;
+    border-radius: 8px;
+    /* transform: matrix(1, 0.06, -0.08, 1, 0, 0); */
 
     @media screen and (max-width: 769px) {
         height: 270px;

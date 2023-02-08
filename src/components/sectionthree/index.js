@@ -7,7 +7,7 @@ import ThreeSlideTwo from "./ThreeSlideTwo";
 
 
 
-const delay = 8000;
+const delay = 9000;
 
 const Sections= [
  

@@ -414,7 +414,7 @@ export const WhyFaqicons = styled.div`
     cursor: pointer;
     justify-content: flex-end;
     text-align: right;
-    top: 20px;
+    top: 15px;
 
 
     /* @media screen and (max-width: 769px) {

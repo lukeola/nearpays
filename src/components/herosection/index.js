@@ -1,7 +1,9 @@
 import React from 'react'
-import { HeroContainer, HeroHeader} from './HeroElements'
+import { Herobg, HeroContainer, HeroHeader, HeroImg} from './HeroElements'
 import AnimatedText from 'react-animated-text-content';
-import Slideshow from '../swipper/swipper';
+// import Slideshow from '../swipper/swipper';
+import Herobgimg from '../../images/herobg.png'
+import Heroimage from '../../images/heroimg.png'
 
 const HeroSection = () => {
   return (
@@ -26,10 +28,16 @@ const HeroSection = () => {
       >
         The modern way to help you move money.
       </AnimatedText>
-      
-      </HeroHeader>
+    </HeroHeader>
 
-      <Slideshow/>
+    <Herobg>
+        <img src={Herobgimg} alt=''/>
+      </Herobg>
+
+        <HeroImg>
+          <img src={Heroimage} alt='' style={{objectFit:'contain', height:'100%', width:'100%'}}/>
+        </HeroImg>
+      {/* <Slideshow/> */}
     </HeroContainer>
   )
 }

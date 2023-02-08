@@ -1,6 +1,6 @@
 import React from 'react'
 import { LefsideImg, Leftside, Leftsidebg, Rightside, RightsideHeading, RightsideText, SectionThreeContainer} from './SectionThreeElements'
-import Iphone from '../../images/slide3.png'
+import Iphone from '../../images/card.png'
 
 
 const ThreeSlideThree = () => {
