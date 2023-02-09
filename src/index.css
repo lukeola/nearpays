@@ -19,3 +19,7 @@ code {
   src: local("circular-std-medium-500"),
     url("./fonts/circular-std-medium-500.ttf") format("truetype");
 }
+
+li {
+  text-decoration: none;
+}

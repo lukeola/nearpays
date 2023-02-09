@@ -50,11 +50,9 @@ function SectionThree() {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {Sections.map((section, index) => (
-          <React.Fragment key={section.id}>
+          <React.Fragment key={index}>
           <div
-            className="threeswipe"
-            key={section.index}
-          
+            className="threeswipe" key={index}
           >
            {section}
           </div></React.Fragment>
