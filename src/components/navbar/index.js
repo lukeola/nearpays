@@ -42,15 +42,15 @@ useEffect(() => {
         <ul className={ Mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(false)}>
             
             <Link to="/why-nearpays"  style={{textDecoration:'none'}}>
-                <Navlinks className={color ? "whynearpays-bg" : "whynearpays"}>Why Nearpays</Navlinks>
+                <Navlinks className={color ? "whynearpays-bg" : "whynearpays"} style={{color: color ? '#043F2E' : '#fff'}}>Why Nearpays</Navlinks>
             </Link>
 
             <Link to="/faqs" style={{textDecoration:'none'}}>
-                <Navlinks  className={color ? "faq-bg" : "faq"}>Faqs</Navlinks>
+                <Navlinks  className={color ? "faq-bg" : "faq"} style={{color: color ? '#043F2E' : '#fff'}}>Faqs</Navlinks>
             </Link>
 
             <Link to="/contact-us" style={{textDecoration:'none'}} >
-                <Navlinks className={color ? "contact-bg" : "contact"}>Contact Us</Navlinks>
+                <Navlinks className={color ? "contact-bg" : "contact"} style={{color: color ? '#043F2E' : '#fff'}}>Contact Us</Navlinks>
             </Link>
 
             <Link to="/" >

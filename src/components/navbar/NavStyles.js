@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const Navlinks = styled.div`
+export const Navlinks = styled.li`
     text-decoration: none;
     list-style: none;
     color: #fff;
