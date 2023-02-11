@@ -12,7 +12,7 @@ export const FaqContainer = styled.div`
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
-        height: 1474px;
+        height: 1374px;
 
     }
 

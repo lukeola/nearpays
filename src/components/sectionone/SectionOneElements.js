@@ -47,6 +47,7 @@ export const SectionOneHeader = styled.div`
         width: 90%;
         margin-left: 5%;
         top: 100px;
+        line-height: 40px;
     }
 
 `

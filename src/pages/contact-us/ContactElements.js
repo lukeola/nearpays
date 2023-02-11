@@ -10,6 +10,7 @@ export const ContactContainer = styled.div`
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
+        height: 843px;
     }
     `
 export const ContactLeft = styled.div`
@@ -19,6 +20,7 @@ export const ContactLeft = styled.div`
 
     @media screen and (max-width: 769px) {
         width: 100%;
+        margin-top: 92px;
     }
 `
 export const ContactRight = styled.div`
@@ -47,7 +49,6 @@ export const ContactHeader = styled.div`
 `
 export const ContactText = styled.div`
     width: 50%;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -89,7 +90,7 @@ export const ContactInput = styled.input`
     padding: 2%;
     height: 82px;
     background: #D3E0D7;
-    border-radius: 16px;
+    border-radius: 4px;
     border: none;
 
     @media screen and (max-width: 769px) {
@@ -103,8 +104,9 @@ export const ContactTextArea = styled.textarea`
     padding: 2%;
     height: 192px;
     background: #D3E0D7;
-    border-radius: 16px;
+    border-radius: 4px;
     border: none;
+    font-size: 14px;
 
     @media screen and (max-width: 769px) {
         width: 90%;
@@ -122,10 +124,13 @@ export const ContactButton = styled.button`
     width: 78%;
     height: 73px;
     background: #043F2E;
-    border-radius: 16px;
+    border-radius: 4px;
     color: #fff;
     border: none;
     cursor: pointer;
+    border-color: #043F2E;
+
+filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.1));
     
     @media screen and (max-width: 769px) {
         width: 90%;
