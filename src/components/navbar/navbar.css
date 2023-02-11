@@ -281,19 +281,23 @@
     }
 
     .register-button {
+        position: relative;
         margin-top: 20px;
         width: 50%;
         color: #fff;
         background-color: #043F2E;
+        left: 3%;
        
         
     }
 
     .register-button-bg {
+        position: relative;
         margin-top: 20px;
         width: 50%;
         color: #fff;
         border-color: #fff;
+        left: 3%;
         
     }
 

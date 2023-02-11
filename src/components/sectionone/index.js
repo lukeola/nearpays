@@ -40,7 +40,7 @@ const SectionOne = () => {
       <BoxContainer>
         <Boxes data-aos='zoom-in'>
           <Box1>
-            <BoxHeading>One app, multiple Benefits</BoxHeading>
+            <BoxHeading>One App, Multiple Benefits</BoxHeading>
             <BoxText>Connect all your banking needs to your phone and complete payment requests on your terms</BoxText>
           </Box1>
           <Box1bg/>
@@ -48,7 +48,7 @@ const SectionOne = () => {
 
         <Boxes data-aos='zoom-in'>
           <Box2>
-            <BoxHeading>Payments on the go</BoxHeading>
+            <BoxHeading>Payments On The Go</BoxHeading>
             <BoxText>Connect all your banking needs to your phone and complete payment requests on your terms</BoxText>
           </Box2>
           <Box2bg/>
@@ -56,7 +56,7 @@ const SectionOne = () => {
 
         <Boxes data-aos='fade-up'>
           <Box3>
-            <BoxHeading>Seamless Online transactions</BoxHeading>
+            <BoxHeading>Seamless Online Transactions</BoxHeading>
             <BoxText>Connect all your banking needs to your phone and complete payment requests on your terms</BoxText>
           </Box3>
           <Box3bg/>

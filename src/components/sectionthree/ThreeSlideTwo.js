@@ -1,6 +1,6 @@
 import React from 'react'
-import { LefsideImg, Leftside, Leftsidebg, Rightside, RightsideHeading, RightsideText, SectionThreeContainer} from './SectionThreeElements'
-import Iphone from '../../images/slide2.png'
+import { Btn2icon, Leftside, Leftsidebg, Rightside, RightsideHeading, RightsideText, SectionThreeContainer, Twoslidebtn1, Twoslidebtn2, TwoslideHeader, Twosliderbalance, Twoslidewrapper} from './SectionThreeElements'
+import Arrowicon from '../../images/ArrowLeft.png'
 
 
 const ThreeSlideTwo = () => {
@@ -8,9 +8,12 @@ const ThreeSlideTwo = () => {
     <SectionThreeContainer>
       <Leftside>
         <Leftsidebg>
-          <LefsideImg>
-            <img src={Iphone} alt='' style={{objectFit:'fill', height:'1005', width:'100%'}}/>
-          </LefsideImg>
+          <Twoslidewrapper>
+            <Twosliderbalance>WALLET BALANCE</Twosliderbalance>
+            <TwoslideHeader>NGN 20,000</TwoslideHeader>
+            <Twoslidebtn1>Reciever's Details</Twoslidebtn1>
+            <Twoslidebtn2>Transfer to Bank <Btn2icon> <img src={Arrowicon} alt=''/></Btn2icon></Twoslidebtn2>
+          </Twoslidewrapper>
         </Leftsidebg>
       </Leftside>
 

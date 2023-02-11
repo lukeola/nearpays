@@ -30,7 +30,7 @@ const Footer = () => {
         threshold={0.1}
         rootMargin="20%"
       >
-        No minimums. Absolutely free.
+        No Minimums. Absolutely Free.
       </AnimatedText>
         
         </FooterHeader>

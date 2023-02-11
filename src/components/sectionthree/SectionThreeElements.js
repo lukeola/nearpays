@@ -102,3 +102,79 @@ export const RightsideText = styled.p`
     
         }
 `
+export const Twoslidewrapper = styled.div`
+    width: 80%;
+    height: 50%;
+    background-color: #C1D3C6;
+    border: 1px solid black;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5%;
+
+    @media screen and (max-width: 769px) {
+        height: 75%;
+        top: 12.5%;
+    }
+`
+export const Twosliderbalance = styled.div`
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #6A706C;
+
+    @media screen and (max-width: 769px) {
+        font-size: 16px;
+    }
+`
+export const TwoslideHeader = styled.div`
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #2E312F;
+
+    @media screen and (max-width: 769px) {
+        font-size: 27px;
+    }
+`
+export const Twoslidebtn1 = styled.div`
+    width: 80%;
+    height: 60px;
+    background: #D5E7DA;
+    border-radius: 8px;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+`
+export const Twoslidebtn2 = styled.div`
+    width: 80%;
+    height: 60px;
+    background: #161E19;
+    border-radius: 8px;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+  
+
+`
+export const Btn2icon = styled.div`
+    margin-top: 5px;
+`

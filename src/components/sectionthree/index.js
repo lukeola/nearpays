@@ -59,7 +59,7 @@ function SectionThree() {
           
         ))}
       </div>
-
+      <ThreeSlideTwo></ThreeSlideTwo>
     </div>
   );
 }
