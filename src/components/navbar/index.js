@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
+import '../../index.css'
 import Logoblack from '../../../src/images/nearpayslogo.png'
 import Logowhite from '../../images/Nearpayslogowhite.png'
 import { Navlinks, Registerbtn } from './NavStyles'
@@ -46,7 +47,7 @@ useEffect(() => {
             </Link>
 
             <Link to="/faqs" style={{textDecoration:'none'}}>
-                <Navlinks  className={color ? "faq-bg" : "faq"} style={{color: color ? '#043F2E' : '#fff'}}>Faqs</Navlinks>
+                <Navlinks  className={color ? "faq-bg" : "faq"} style={{color: color ? '#043F2E' : '#fff'}}>FAQs</Navlinks>
             </Link>
 
             <Link to="/contact-us" style={{textDecoration:'none'}} >

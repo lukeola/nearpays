@@ -1,5 +1,4 @@
 import React, { useRef , useState, useEffect} from 'react'
-import Footer from '../../components/footer'
 import { ContactButton, ContactContainer, ContactForm, ContactHeader, ContactInput, ContactLeft, ContactRight, ContactSocial, ContactText, ContactTextArea } from './ContactElements'
 import { FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import Navbar from '../../components/navbar'
@@ -7,6 +6,7 @@ import emailjs from '@emailjs/browser';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import AnimatedText from 'react-animated-text-content'
+import { Navbg } from '../../components/navbar/NavStyles';
 
 const ContactUs = () => {
 
@@ -40,6 +40,7 @@ const ContactUs = () => {
   return (
     <>
     <Navbar/>
+    <Navbg/>
     <ContactContainer>
         <ContactLeft>
           <ContactHeader>
@@ -83,7 +84,7 @@ const ContactUs = () => {
           </ContactForm>
         </ContactRight>
     </ContactContainer>
-    <Footer/> 
+    
     </>
   )
 }

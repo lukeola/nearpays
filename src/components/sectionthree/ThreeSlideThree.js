@@ -19,8 +19,8 @@ const ThreeSlideThree = () => {
         <RightsideText>Add multiple debit cards to your mobile phone for</RightsideText>
         <RightsideText>NFC payment.</RightsideText>
         <RightsideText>Find everything you are looking for all in one place.</RightsideText>
-        <RightsideText>(If you have multiple debts cards or your cards </RightsideText>
-        <RightsideText>are not  NFC enabled)</RightsideText>
+        {/* <RightsideText>(If you have multiple debts cards or your cards </RightsideText>
+        <RightsideText>are not  NFC enabled)</RightsideText> */}
       </Rightside> 
     </SectionThreeContainer>
   )

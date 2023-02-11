@@ -21,7 +21,7 @@ const ThreeSlideOne = () => {
         <RightsideText >smartphone.</RightsideText>
         <RightsideText >Steer your business towards a new level of financial </RightsideText>
         <RightsideText >transactions.</RightsideText>
-        <RightsideText >(Your smartphone becomes your POS Terminal)</RightsideText>
+        {/* <RightsideText >(Your smartphone becomes your POS Terminal)</RightsideText> */}
         
       </Rightside> 
     </SectionThreeContainer>

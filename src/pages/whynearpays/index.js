@@ -1,14 +1,14 @@
 import React ,{useState, useEffect}from 'react'
-import Footer from '../../components/footer'
 // import Navbar from '../../components/navbar'
 import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne,  SectionTwo, Text,  Upheader, Upline, Uptext, WhyContainer, IconQuestionWrapper } from './WhyElements'
 import Bgimg from '../../images/bgimage.png'
-import Fourimg from '../../images/fourimage.png'
+import Fourimg from '../../images/amaka1.jpg'
 import './why.css'
 import AnimatedText from 'react-animated-text-content';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import WhyNavbar from './navbar'
+import Navbar from './../../components/navbar'
+import { Navbg } from '../../components/navbar/NavStyles'
 
 const WhyNearpays = () => {
 
@@ -30,7 +30,8 @@ const WhyNearpays = () => {
 
   return (
     <WhyContainer>
-      <WhyNavbar/>
+      <Navbar/>
+      <Navbg/>
       <SectionOne>
       <Header>
       <AnimatedText
@@ -158,7 +159,7 @@ const WhyNearpays = () => {
           </RightSide>
         </SectionFive>
 
-      <Footer/>
+  
     </WhyContainer>
   )
 }

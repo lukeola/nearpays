@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const WhyContainer = styled.div`
     width: 100%;
 `
+
 export const SectionOne = styled.div`
     position: relative;
     display: flex;
@@ -48,7 +49,6 @@ export const Text = styled.div`
     width: 30%;
     height: 256px;
     margin-left: 5%;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -94,7 +94,6 @@ export const ThreeHeader = styled.div`
     width: 60%;
     left: 20%;
     margin-top: 132px;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 450;
     font-size: 48px;
@@ -113,7 +112,6 @@ export const ThreeText1 = styled.div`
     width: 60%;
     left: 20%;
     margin-top: 93px;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -378,9 +376,13 @@ export const WhyFaqitems = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-radius: 16px;
+    border-radius: 4px;
     padding: 24px 38px 4px 18px;
     background: #1E3125;
+    cursor: pointer;
+    border: 1px solid #043F2E;
+
+    filter: drop-shadow(4px 5px 15px rgba(12, 70, 26, 0.1));
 
 
 ;

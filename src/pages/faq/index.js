@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import Footer from '../../components/footer'
 import { FaqAnswer, FaqContainer, FaqHeader, Faqicons, Faqitems, FaqQuestion, Faqwrapper, LeftSide, Moretext, RightSide } from './FaqElements'
 import './faq.css'
 import Navbar from '../../components/navbar'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { IconQuestionWrapper } from '../whynearpays/WhyElements'
+import { Navbg } from '../../components/navbar/NavStyles'
 
 
 const FaqSection = () => {
@@ -29,6 +29,7 @@ const FaqSection = () => {
     
     <> 
     <Navbar/>
+    <Navbg/>
     <FaqContainer>
     
         <LeftSide>
@@ -52,9 +53,7 @@ const FaqSection = () => {
           <Moretext>Have more questions? <a href='/contact-us' style={{textDecoration:'none', color:'#5DAF60'}}>Contact Us</a></Moretext>
           </RightSide>
     </FaqContainer>
-    <div style={{position:'absolute', top:'1174px', width:'100%'}}>
-    <Footer />
-    </div>
+ 
     </>
     
 

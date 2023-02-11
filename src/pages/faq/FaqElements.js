@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const FaqContainer = styled.div`
     display: flex;
     width: 100%;
-    position: absolute;
+    position: relative;
     height: 1174px;
     margin-top: 0;
     background: #E0EBE3;
@@ -76,9 +76,10 @@ export const Faqitems = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-radius: 16px;
+    border-radius: 4px;
     padding: 24px 28px 14px 18px;
     background: #D3E0D7;
+    border: 1px solid #D3E0D7;
     cursor: pointer;
  
 

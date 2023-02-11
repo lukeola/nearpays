@@ -84,7 +84,6 @@ export const RightsideHeading = styled.div`
 `
 export const RightsideText = styled.p`
     width: 50px;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;

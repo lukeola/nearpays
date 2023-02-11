@@ -18,7 +18,7 @@ export const SectionTwoContainer = styled.div`
 export const SectionTwoHeader = styled.div`
     position: relative;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 5%;
     top: 102px;
     font-size: 48px;
     font-weight: 500;
@@ -46,7 +46,6 @@ export const BoxHeader = styled.div`
 
 `
 export const BoxText = styled.div`
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -66,7 +65,6 @@ export const BoxNumber = styled.div`
     position: relative;
     width: 59px;
     height: 59px;
-    left: 120px;
     top: 4px;
     border-radius: 50%;
     border: 1px solid #EBEBEB;
@@ -79,6 +77,7 @@ export const BoxNumber = styled.div`
     text-align: center;
     color: #043F2E;
     padding-left: 20px;
+    margin-bottom: 16px;
 
     @media screen and (max-width: 769px) {
         font-size: 14px;

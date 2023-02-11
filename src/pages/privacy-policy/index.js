@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
 import "../../fonts/circular-std-medium-500.ttf"
 import '../../index.css'
@@ -390,7 +389,7 @@ We may request additional details from you regarding your complaints and keep re
 
     </PrivacyPolicyContainer>
 
-    <Footer/>
+ 
 
     </>
 

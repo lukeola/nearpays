@@ -31,7 +31,7 @@ const HeroSection = () => {
     </HeroHeader>
 
     <Herobg>
-        <img src={Herobgimg} alt='' style={{objectFit:'fill', height:'100%', width:'100%'}}/>
+        <img src={Herobgimg} alt='' style={{objectFit:'contain', height:'100%', width:'100%'}}/>
       </Herobg>
 
         <HeroImg>

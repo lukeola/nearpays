@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@font-face {
+    font-family: "Light";   /*Can be any text*/
+    src: local("circular-std-medium-500"),
+      url("../../fonts/circular-std-medium-500.ttf") format("truetype");
+  }
 
 *{
     margin: 0;
@@ -42,7 +46,6 @@
     
 }
 .nav-links {
-    font-family: Inter;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -54,13 +57,13 @@
 .faq,
 .whynearpays {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 98%;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    font-family: Poppins;
     font-weight: 400;
+    background-color: transparent;
   
 
 }
@@ -74,7 +77,6 @@
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    font-family: Poppins;
     font-weight: 400;
   
 
@@ -94,14 +96,14 @@
   }
   
   .contact-bg:hover {
-      border-bottom: 1px solid #fff ;
+      border-bottom: 1px solid #043F2E ;
     }
   
     .faq-bg:hover {
-      border-bottom: 1px solid #fff ; 
+      border-bottom: 1px solid #043F2E ; 
     }
     .whynearpays-bg:hover {
-      border-bottom: 1px solid #fff ;
+      border-bottom: 1px solid #043F2E ;
     }
 
 .register-button {
@@ -146,7 +148,6 @@
 
     filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.1));
     
-   
     
 }
 
@@ -229,14 +230,15 @@
         padding-top: 100px;
         flex-direction: column;
         list-style: none;
-        background-color: rgba(36, 34, 34, 0.65);
-        box-shadow: 0 8px 32 px 0 rgba(190, 188, 31, 0.37);
+        background-color: rgba(36, 34, 34, 0.9);
+        box-shadow: 0 8px 32px 0 rgba(190, 188, 31, 0.37);
         backdrop-filter: blur(8px);
         border-radius: 13px;
         top: 75px;
         transition: all 0.8s ease-in-out;
         width: 100%;
         z-index: 999;
+        gap: 20px;
         text-align: center;
     }
 
@@ -254,7 +256,7 @@
         cursor: pointer;
         margin-top: 20px;
         width: 50%;
-        margin-left: 25%;
+        left: 25%;
         border-radius: 4px;
         transition: all 0.9s ease-in-out;
     }
@@ -273,7 +275,7 @@
         cursor: pointer;
         margin-top: 20px;
         width: 50%;
-        margin-left: 25%;
+        left: 25%;
         border-radius: 4px;
         transition: all 0.9s ease-in-out;
     }
@@ -292,9 +294,6 @@
         width: 50%;
         color: #fff;
         border-color: #fff;
-       
-       
-       
         
     }
 

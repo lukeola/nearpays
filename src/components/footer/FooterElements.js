@@ -48,7 +48,7 @@ export const FooterHeader = styled.div`
 
 `
 
-export const FooterText =styled.div`
+export const FooterText = styled.div`
     position: relative;
     height: 32px;
     width: 40%;
@@ -56,7 +56,7 @@ export const FooterText =styled.div`
     margin-top: 160px;
     color: #C7CFCD;
     text-align: center;
-    font-family: 'fakt pro';
+
 
     @media screen and (max-width: 769px) {
         margin-top: 80px;
@@ -100,7 +100,7 @@ export const NavItems = styled.div`
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-    font-family: 'fakt pro';
+
 
 `
 
@@ -123,7 +123,7 @@ export const BottomLinks = styled.div`
     margin-top: 91px;
     display: flex;
     color: #929B95;
-    font-family: 'fakt pro';
+    
 
     @media screen and (max-width: 769px) {
        flex-direction: column;

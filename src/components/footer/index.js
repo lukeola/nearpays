@@ -45,7 +45,7 @@ const Footer = () => {
             <NavContainer >
             <NavItems> <Link to='/' style={{color:'#fff', textDecoration:'none'}}>Home</Link></NavItems>
             <NavItems> <Link to='/why-nearpays' style={{color:'#fff', textDecoration:'none'}}>About Us</Link></NavItems>
-            <NavItems> <Link to='/faqs' style={{color:'#fff', textDecoration:'none'}}>Faqs</Link></NavItems>
+            <NavItems> <Link to='/faqs' style={{color:'#fff', textDecoration:'none'}}>FAQs</Link></NavItems>
             <NavItems> <Link to='/contact-us' style={{color:'#fff', textDecoration:'none'}}>Contact Us</Link></NavItems>
             </NavContainer>
 
