@@ -1,13 +1,12 @@
 import React ,{useState, useEffect}from 'react'
 // import Navbar from '../../components/navbar'
 import { Downheader, DownImage, Downline, Downtext, WhyFaqAnswer, WhyFaqicons, WhyFaqitems, WhyFaqQuestion, WhyFaqwrapper, FiveHeader, Header, LeftSide, WhyMoretext, RightSide, SectionFive, SectionFour, SectionFourDown, SectionFourUp, SectionOne,  SectionTwo, Text,  Upheader, Upline, Uptext, WhyContainer, IconQuestionWrapper } from './WhyElements'
-import Bgimg from '../../images/bgimage.png'
+import Bgimg from '../../images/amaka-vic.jpg'
 import Fourimg from '../../images/amaka1.jpg'
 import './why.css'
 import AnimatedText from 'react-animated-text-content';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import Navbar from './../../components/navbar'
 import { Navbg } from '../../components/navbar/NavStyles'
 
 const WhyNearpays = () => {
@@ -30,7 +29,6 @@ const WhyNearpays = () => {
 
   return (
     <WhyContainer>
-      <Navbar/>
       <Navbg/>
       <SectionOne>
       <Header>
@@ -61,7 +59,7 @@ const WhyNearpays = () => {
       </SectionOne>
 
       <SectionTwo>
-      <img src={Bgimg} alt='' style={{objectFit:'fill', height:'1005', width:'100%'}}/>
+      <img src={Bgimg} alt='' style={{objectFit:'fill', height:'100%', width:'100%'}}/>
       </SectionTwo>
 
       {/* <SectionThree>

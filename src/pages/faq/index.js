@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { FaqAnswer, FaqContainer, FaqHeader, Faqicons, Faqitems, FaqQuestion, Faqwrapper, LeftSide, Moretext, RightSide } from './FaqElements'
 import './faq.css'
-import Navbar from '../../components/navbar'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { IconQuestionWrapper } from '../whynearpays/WhyElements'
@@ -28,7 +27,6 @@ const FaqSection = () => {
   return (
     
     <> 
-    <Navbar/>
     <Navbg/>
     <FaqContainer>
     

@@ -1,11 +1,16 @@
+.sign-in-section {
+    height: 655px;
+    background-color: #161E19;
+}
+
 .sign-in-container {
-    position: absolute;
+    position: relative;
     width: 50%;
     height: 455px;
     left: 25%;
-    top: 158px;
+    top: 58px;
     background: #E0EBE3;
-    border-radius: 16px;
+    border-radius: 4px;
     z-index: 2;
 }
 
@@ -22,7 +27,6 @@
     text-align: center;
     height: 122px;
     margin-top: 34px;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -37,63 +41,75 @@
     height: 64px;
     padding: 2%;
     background: #D3E0D7;
-    border-radius: 16px;
+    border-radius: 4px;
     border: none;
+}
+
+.btn-section {
+    position: absolute;
+    top: 350px;
+    display: flex;
+    width: 70%;
+    left: 15%;
+    justify-content: space-between;
+
 }
 
 #sign-in-btn1 {
-    position: absolute;
+    position: relative;
     justify-content: center;
     align-items: center;
     padding: 20px 16px;
-    gap: 10px;
-    top: 350px;
-    left: 100px;
-    width: 30%;
-    height: 65px;
+    width: 40%;
+    height: 55px;
     background: #043F2E;
-    border-radius: 16px;
+    border-radius: 4px;
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 #sign-in-btn2 {
-    position: absolute;
+    position: relative;
     justify-content: center;
     align-items: center;
     padding: 20px 16px;
-    gap: 10px;
-    top: 50px;
-    width: 30%;
-    height: 65px;
+    width: 40%;
+    height: 55px;
     background: #043F2E;
-    border-radius: 16px;
+    border-radius: 4px;
     color: #fff;
     border: none;
-    top: 350px;
-    left: 300px;
+    cursor: pointer;
 }
 
 #sign-up-text {
     position: absolute;
     margin-top: 430px;
-    margin-left: 100px;
+    margin-left: 15%;
 }
 
 #sign-in-text {
     position: absolute;
     margin-top: 470px;
-    margin-left: 300px;
+    margin-left: 50%;
+}
+
+.sign-up-section {
+    position: relative;
+    height: 655px;
+    
+    background-color: #161E19;
 }
 
 .sign-up-container {
-    position: absolute;
+    position: relative;
     width: 50%;
+    top: 58px;
     height: 555px;
     left: 25%;
-    top: 158px;
     background: #E0EBE3;
-    border-radius: 16px;
+    border-radius: 4px;
     z-index: 2; 
 }
 
@@ -104,11 +120,19 @@
     padding: 20px 16px;
     gap: 10px;
     top: 450px;
-    left: 100px;
+    left: 15%;
     width: 30%;
     height: 65px;
     background: #043F2E;
-    border-radius: 16px;
+    border-radius: 4px;
     color: #fff;
     border: none;
+    cursor: pointer;
+}
+
+.auth-text {
+    position: absolute;
+    left: 70%;
+    top: 30px;
+
 }

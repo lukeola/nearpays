@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
 import '../../index.css'
-import Logoblack from '../../../src/images/nearpayslogo.png'
-import Logowhite from '../../images/Nearpayslogowhite.png'
+import Logoblack from '../../../src/images/Nearpayslogo-black.png'
+import Logowhite from '../../images/Nearpayslogo-white.png'
 import { Navlinks, Registerbtn } from './NavStyles'
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ useEffect(() => {
     <div className={color ? "header-bg" : "header"} >
     <nav className='navbar' >
     <Link to="/" className={ color ? 'logo-bg' : 'logo'}>
-    <img src={color ? Logoblack : Logowhite}   alt='NearPays' style={{objectFit:'contain'}}/>
+    <img src={color ? Logoblack : Logowhite}   alt='NearPays' style={{objectFit:'contain', height:'100%', width:'100%'}}/>
     </Link>
         
         <ul className={ Mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(false)}>

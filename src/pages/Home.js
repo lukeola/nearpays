@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 import HeroSection from "../components/herosection";
-import Navbar from "../components/navbar";
 import SectionOne from "../components/sectionone";
 import SectionTwo from "../components/sectiontwo";
 import Aos from 'aos'
@@ -19,7 +18,7 @@ const Home = () => {
 
     return (
         <>
-        <Navbar/>
+    
         <HeroSection />
         <SectionOne/>
        

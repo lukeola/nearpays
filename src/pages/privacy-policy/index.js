@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navbar from '../../components/navbar';
+import { Navbg } from '../../components/navbar/NavStyles';
 import "../../fonts/circular-std-medium-500.ttf"
 import '../../index.css'
 import './policy.css'
@@ -35,7 +35,7 @@ const PrivacyPolicyDefinitionList = styled.dl`
 
 const PrivacyPolicy = () => (
     <>
-    <Navbar/>
+    <Navbg/>
   <PrivacyPolicyContainer className='privacy'>
     <PrivacyPolicyHeader>Introduction</PrivacyPolicyHeader>
 <div>

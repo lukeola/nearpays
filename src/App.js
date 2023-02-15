@@ -11,11 +11,13 @@ import SignUp from './components/auth/SignUp';
 import Profile from './pages/profile';
 import PrivacyPolicy from './pages/privacy-policy';
 import Footer from './components/footer';
+import Navbar from './components/navbar';
 
 
 function App() {
     return (
       <Router>
+      <Navbar/>
       <Routes>
         <Route exact path='/'  element={<Home/>} />
         <Route exact path='/why-nearpays'  element={<WhyNearpays/>} />

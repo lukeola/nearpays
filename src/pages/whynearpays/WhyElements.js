@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import '../../index.css'
+import "../../fonts/circular-std-medium-500.ttf"
 
 
 export const WhyContainer = styled.div`
@@ -20,13 +22,10 @@ export const SectionOne = styled.div`
 export const Header = styled.div`
     position: relative;
     width: 30%;
-    height: 183px;
     left: 5%;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 450;
     font-size: 48px;
-    line-height: 61px;
     color: #2E312F;
     top: 162px;
 
@@ -39,9 +38,9 @@ export const Header = styled.div`
     @media screen and (max-width: 769px) {
         font-size: 24px;
         width: 70%;
-        left: 5%;
-        top: 82px;
-        line-height: 41px;
+        left: 2.5%;
+        top: 52px;
+
     }
 `
 export const Text = styled.div`
@@ -63,20 +62,31 @@ export const Text = styled.div`
     }
 
     @media screen and (max-width: 769px) {
-        position: absolute;
+        position: relative;
         font-size: 16px;
         width: 95%;
         margin-left: 2.5%;
-        top: 226px;
+        top: 16px;
+        height: 56px;
     }
 
-` 
+`
 export const SectionTwo = styled.div`
+    position: relative;
     width: 100%;
-    height: 619px;
+    height: 819px;
+    top: 0px;
 
     @media screen and (max-width: 769px) {
-        height: 271px;
+        height: 571px;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 400px;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 350px;
     }
 `
 export const SectionThree = styled.div`
@@ -104,6 +114,7 @@ export const ThreeHeader = styled.div`
         position: relative;
         margin-top: 32px;
         font-size: 24px;
+        width: 80%;
     }
 `
 
@@ -132,7 +143,6 @@ export const ThreeText2 = styled.div`
     width: 60%;
     left: 20%;
     margin-top: 200px;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -166,7 +176,6 @@ export const Upheader = styled.div`
     height: 122px;
     left: 12%;
     top: 71px;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -190,7 +199,6 @@ export const Uptext = styled.div`
     height: 108px;
     left: 12%;
     top: 241px;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -235,7 +243,6 @@ export const Downheader = styled.div`
     height: 122px;
     left: 47%;
     top: 491px;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -258,7 +265,6 @@ export const Downtext = styled.div`
     height: 180px;
     left: 47%;
     top: 661px;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -323,7 +329,6 @@ export const FiveHeader = styled.div`
     position: relative;
     width: 100%;
     top: 251px;
-    font-family: 'Circular Std';
     font-style: normal;
     font-weight: 500;
     font-size: 84px;
@@ -394,7 +399,6 @@ export const IconQuestionWrapper = styled.div`
 export const WhyFaqQuestion = styled.div`
     position: relative;
     width: 98%;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -425,9 +429,8 @@ export const WhyFaqicons = styled.div`
 
     } */
 `
-export const WhyMoretext =styled.div`
+export const WhyMoretext = styled.div`
     position: relative;
-    font-family: Circular Std;
     font-size: 20px;
     font-weight: 450;
     line-height: 36px;
