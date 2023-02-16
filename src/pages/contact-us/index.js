@@ -1,7 +1,6 @@
 import React, { useRef , useState, useEffect} from 'react'
 import { ContactButton, ContactContainer, ContactForm, ContactHeader, ContactInput, ContactLeft, ContactRight, ContactSocial, ContactText, ContactTextArea } from './ContactElements'
 import { FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'
-import Navbar from '../../components/navbar'
 import emailjs from '@emailjs/browser';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -39,7 +38,6 @@ const ContactUs = () => {
   
   return (
     <>
-    <Navbar/>
     <Navbg/>
     <ContactContainer>
         <ContactLeft>
