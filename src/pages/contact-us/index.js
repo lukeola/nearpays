@@ -6,6 +6,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import AnimatedText from 'react-animated-text-content'
 import { Navbg } from '../../components/navbar/NavStyles';
+import Navbar from '../../components/navbar/index'
 
 const ContactUs = () => {
 
@@ -38,6 +39,7 @@ const ContactUs = () => {
   
   return (
     <>
+    <Navbar/>
     <Navbg/>
     <ContactContainer>
         <ContactLeft>

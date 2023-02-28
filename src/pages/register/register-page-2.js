@@ -1,11 +1,11 @@
 import React from 'react'
-import { FileContainer, Filetext, FormButton, FormContainer, FormHeader, FormInput, Formwrapper, RegisterContainer } from './RegisterElements'
+import { FileContainer, Filetext, FormButton,  FormContainer2, FormHeader, FormInput, Formwrapper, RegisterContainer } from './RegisterElements'
 
 const Register2 = () => {
   return (
     <>
     <RegisterContainer/>
-    <FormContainer>
+    <FormContainer2>
         <FormHeader>Let’s Know You - Virtual POS KYC</FormHeader>
         <Formwrapper>
           <FormInput placeholder='BVN'/>
@@ -18,7 +18,7 @@ const Register2 = () => {
           </FileContainer>
           <a href='/register-page-3'><FormButton>Submit</FormButton></a>
         </Formwrapper>
-    </FormContainer>
+    </FormContainer2>
     </>
   )
 }

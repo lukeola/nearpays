@@ -5,6 +5,7 @@ import SectionTwo from "../components/sectiontwo";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import SectionThree from "../components/sectionthree";
+import Navbar from '../components/navbar/index'
 
 
 
@@ -18,7 +19,7 @@ const Home = () => {
 
     return (
         <>
-    
+        <Navbar/>
         <HeroSection />
         <SectionOne/>
        

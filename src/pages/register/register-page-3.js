@@ -1,19 +1,19 @@
 import React from 'react'
-import { RegisterContainer, SuccessHeader, SuccessIcon, SuccessPage, SuccessText } from './RegisterElements'
+import { SuccessContainer, SuccessHeader, SuccessIcon, SuccessPage, SuccessText } from './RegisterElements'
 import Successimg from '../../images/Tickcircle.png'
 
 const Register3 = () => {
   return (
     <>
-    <RegisterContainer/>
+    <SuccessContainer/>
     
         <SuccessPage>
             <SuccessIcon>
-                <img src={Successimg} alt=''/>
+                <img src={Successimg} alt='' style={{objectFit:'contain', height:'100%', width:'100%'}}/>
             </SuccessIcon>
-            <SuccessHeader>Your request has been recieved.</SuccessHeader>
+            <SuccessHeader>Registration Successfull.</SuccessHeader>
             <SuccessText>
-            A support team member will reach out to you in 24 hours
+             <a href='/sign-in' style={{textDecoration:'none', marginRight:'5px'}}>Login</a> to your dashboard
             </SuccessText>
         </SuccessPage>
  

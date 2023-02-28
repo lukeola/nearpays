@@ -54,7 +54,7 @@ useEffect(() => {
                 <Navlinks className={color ? "contact-bg" : "contact"} style={{color: color ? '#043F2E' : '#fff'}}>Contact Us</Navlinks>
             </Link>
 
-            <Link to="/" >
+            <Link to="/sign-up" >
                 <Registerbtn className={color ? "register-button-bg" : "register-button"}>Register</Registerbtn>
             </Link>
         </ul>

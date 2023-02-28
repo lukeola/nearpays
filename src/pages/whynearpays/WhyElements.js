@@ -76,17 +76,21 @@ export const SectionTwo = styled.div`
     width: 100%;
     height: 819px;
     top: 0px;
+    padding-bottom: -10%;
 
     @media screen and (max-width: 769px) {
         height: 571px;
+        padding-bottom: 0%;
     }
 
     @media screen and (max-width: 500px) {
         height: 400px;
+        padding-bottom: 0%;
     }
 
     @media screen and (max-width: 400px) {
         height: 350px;
+        padding-bottom: 0%;
     }
 `
 export const SectionThree = styled.div`
@@ -301,7 +305,7 @@ export const DownImage = styled.div`
     width: 35%;
     height: 397px;
     left: 8%;
-    top: 444px;
+    top: 474px;
     border-radius: 16px;
 
     @media screen and (max-width: 769px) {

@@ -4,6 +4,7 @@ import { Navbg } from '../../components/navbar/NavStyles';
 import "../../fonts/circular-std-medium-500.ttf"
 import '../../index.css'
 import './policy.css'
+import Navbar from '../../components/navbar/index'
 
 const PrivacyPolicyContainer = styled.div`
   padding: 1em;
@@ -35,6 +36,7 @@ const PrivacyPolicyDefinitionList = styled.dl`
 
 const PrivacyPolicy = () => (
     <>
+    <Navbar/>
     <Navbg/>
   <PrivacyPolicyContainer className='privacy'>
     <PrivacyPolicyHeader>Introduction</PrivacyPolicyHeader>

@@ -5,6 +5,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { IconQuestionWrapper } from '../whynearpays/WhyElements'
 import { Navbg } from '../../components/navbar/NavStyles'
+import Navbar from '../../components/navbar/index'
 
 
 const FaqSection = () => {
@@ -27,6 +28,7 @@ const FaqSection = () => {
   return (
     
     <> 
+    <Navbar/>
     <Navbg/>
     <FaqContainer>
     
