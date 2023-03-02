@@ -1,6 +1,5 @@
 import React, {  useEffect, useState } from 'react'
 import { Alert} from 'react-bootstrap'
-import { } from "firebase/auth"
 import { Navbg } from '../navbar/NavStyles';
 import { useNavigate } from 'react-router-dom';
 import './signin.css'

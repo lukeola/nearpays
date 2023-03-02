@@ -6,20 +6,34 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import { useEffect, useState } from "react";
+import Axios  from "axios";
 
 const List = () => {
-  const rows = [
-    {
-      id: 1143155,
-      product: "Acer Nitro 5",
-      img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
-      customer: "John Smith",
-      date: "1 March",
-      amount: 785,
-      method: "Cash on Delivery",
-      status: "Approved",
+
+
+  const [transactions, setTransactions] = useState([])
+
+  const handleDelete = async (id) => {
+    try{
+      await Axios.delete("http://localhost:3001/user"+id)
+      window.location.reload()
+    }catch(err){
+      console.log(err)
     }
-  ];
+  }
+
+  useEffect(()=>{
+    const transact = async () => {
+      try{
+        const res = await Axios.get("http://localhost:3001/user")
+        setTransactions(res.data)
+      }catch(err){
+      console.log(err)
+    }
+  }
+  transact()
+  },[])
   return (
     <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -35,21 +49,21 @@ const List = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {transactions.map(row => (
             <TableRow key={row.id}>
               <TableCell className="tableCell">{row.id}</TableCell>
               <TableCell className="tableCell">
                 <div className="cellWrapper">
-                  <img src={row.img} alt="" className="image" />
-                  {row.product}
+                 {row.image &&  <img src={row.image} alt="" className="image" />}
+                  {row.username}
                 </div>
               </TableCell>
-              <TableCell className="tableCell">{row.customer}</TableCell>
-              <TableCell className="tableCell">{row.date}</TableCell>
-              <TableCell className="tableCell">{row.amount}</TableCell>
-              <TableCell className="tableCell">{row.method}</TableCell>
+              <TableCell className="tableCell">{row.username}</TableCell>
+              <TableCell className="tableCell">{row.phone}</TableCell>
+              <TableCell className="tableCell">{row.address}</TableCell>
+              <TableCell className="tableCell">{row.fullname}</TableCell>
               <TableCell className="tableCell">
-                <span className={`status ${row.status}`}>{row.status}</span>
+                <button className="delete" onClick={()=>handleDelete(row.id)}>Delete</button>
               </TableCell>
             </TableRow>
           ))}
