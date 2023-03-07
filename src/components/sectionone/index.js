@@ -49,7 +49,7 @@ const SectionOne = () => {
         <Boxes data-aos='zoom-in'>
           <Box2>
             <BoxHeading>Payments On The Go</BoxHeading>
-            <BoxText>Connect all your banking needs to your phone and complete payment requests on your terms</BoxText>
+            <BoxText>Now you don't have to pull out your cards, simply pay with your phone</BoxText>
           </Box2>
           <Box2bg/>
         </Boxes>
@@ -57,7 +57,7 @@ const SectionOne = () => {
         <Boxes data-aos='fade-up'>
           <Box3>
             <BoxHeading>Seamless Online Transactions</BoxHeading>
-            <BoxText>Connect all your banking needs to your phone and complete payment requests on your terms</BoxText>
+            <BoxText>A simpler way to spend, send and save at your fingertips</BoxText>
           </Box3>
           <Box3bg/>
         </Boxes>
