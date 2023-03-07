@@ -20,7 +20,7 @@ Axios.defaults.withCredentials = true;
 
 const signIn = (e) =>{
   e.preventDefault();
-  Axios.post("http://localhost:3001/sign-in", {
+  Axios.post("http://localhost:3001/api/auth/sign-in", {
     username: username,
     password: password,
   }).then((response) => {
@@ -35,7 +35,7 @@ const signIn = (e) =>{
 
  
 useEffect(() => {
-  Axios.get("http://localhost:3001/sign-in").then((response) => {
+  Axios.get("http://localhost:3001/api/auth/sign-in").then((response) => {
     console.log(response)
   })
 

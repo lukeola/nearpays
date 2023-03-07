@@ -23,7 +23,7 @@ export default function Signup(){
   
   const signUp = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:3001/sign-up", {
+    Axios.post("http://localhost:3001/api/users/sign-up", {
       email: email,
       username: username,
       password: password,

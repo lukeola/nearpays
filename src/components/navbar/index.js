@@ -54,9 +54,9 @@ useEffect(() => {
                 <Navlinks className={color ? "contact-bg" : "contact"} style={{color: color ? '#043F2E' : '#fff'}}>Contact Us</Navlinks>
             </Link>
 
-            <Link to="/sign-up" >
+            {/* <Link to="/sign-up" >
                 <Registerbtn className={color ? "register-button-bg" : "register-button"}>Register</Registerbtn>
-            </Link>
+            </Link> */}
         </ul>
         <button className={color ? "mobile-menu-icon-bg" : "mobile-menu-icon"} onClick={() => setMobile(!Mobile)}>
             {Mobile ? ( <i className='fas fa-times'/>) : (<i className='fas fa-bars' />)}
