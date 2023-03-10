@@ -11,7 +11,7 @@ const ThreeSlideTwo = () => {
           <Twoslidewrapper>
             <Twosliderbalance>WALLET BALANCE</Twosliderbalance>
             <TwoslideHeader>NGN 20,000</TwoslideHeader>
-            <Twoslidebtn1>Reciever's Details</Twoslidebtn1>
+            <Twoslidebtn1>Receiver's Details</Twoslidebtn1>
             <Twoslidebtn2>Transfer to Bank <Btn2icon> <img src={Arrowicon} alt=''/></Btn2icon></Twoslidebtn2>
           </Twoslidewrapper>
         </Leftsidebg>

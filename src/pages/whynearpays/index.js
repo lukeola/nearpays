@@ -95,7 +95,7 @@ const WhyNearpays = () => {
 
       </Upheader>
           <Uptext>
-            Making payments should be easy, smart and seamless. Thats’s what we are all about. Access and make payments globally without having to worry about how you money moves. At Nearpays, stay up to date and follow all your transactions across diferent banks in one place
+            Making payments should be easy, smart and seamless. That’s what we are all about. Access and make payments globally without having to worry about how your money moves. At Nearpays, stay up to date and follow all your transactions across different banks in one place
           </Uptext>
           <Upline/>
         </SectionFourUp>
