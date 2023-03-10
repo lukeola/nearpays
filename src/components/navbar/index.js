@@ -4,7 +4,7 @@ import './navbar.css'
 import '../../index.css'
 import Logoblack from '../../../src/images/Nearpayslogo-black.png'
 import Logowhite from '../../images/Nearpayslogo-white.png'
-import { Navlinks, Registerbtn } from './NavStyles'
+import { Navlinks} from './NavStyles'
 
 const Navbar = () => {
 

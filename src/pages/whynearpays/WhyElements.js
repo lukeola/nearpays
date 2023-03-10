@@ -16,7 +16,7 @@ export const SectionOne = styled.div`
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
-        height: 430px;
+        height: 480px;
     }
   
 `
@@ -307,12 +307,13 @@ export const SectionFive = styled.div`
     position: relative;
     display: flex;
     width: 100%;
-    height: 668px;
+    height: auto;
     background: #161E19; 
+    padding-bottom:100px;
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
-        height: 720px;
+       
     }
 `
 export const FiveHeader = styled.div`
@@ -425,7 +426,7 @@ export const WhyMoretext = styled.div`
     font-weight: 450;
     line-height: 36px;
     color: #FFFFFF;
-    top: 532px;
+    top: 32px;
 
     @media screen and (max-width: 769px) {
         top: 32px;

@@ -155,7 +155,7 @@ const WhyNearpays = () => {
           ))}
    
           </WhyFaqwrapper>
-          <WhyMoretext>Have more questions? <a href='/contact-us' style={{textDecoration:'none', color:'#5DAF60'}}>Contact Us</a></WhyMoretext>
+          <WhyMoretext data-aos='fade-up'>Have more questions? <a href='/contact-us' style={{textDecoration:'none', color:'#5DAF60'}}>Contact Us</a></WhyMoretext>
           </RightSide>
         </SectionFive>
 
