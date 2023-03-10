@@ -247,6 +247,8 @@
         z-index: 999;
         gap: 20px;
         text-align: center;
+        align-items: center;
+    
     }
 
   
@@ -261,10 +263,9 @@
         padding:15px;
         cursor: pointer;
         margin-top: 20px;
-        width: 50%;
-        left: 25%;
-        border-radius: 4px;
+        width: 100%;
         text-align: center;
+        justify-content: center;
         transition: all 0.9s ease-in-out;
     }
 
@@ -279,12 +280,11 @@
         font-size: 16px;
         cursor: pointer;
         margin-top: 20px;
-        width: 50%;
-        left: 25%;
+        width: 100%;
         text-align: center;
-        border-radius: 4px;
         transition: all 0.9s ease-in-out;
         justify-content: center;
+        align-items: center;
     }
 
     .register-button {
