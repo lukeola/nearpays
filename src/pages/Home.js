@@ -10,6 +10,7 @@ import Navbar from '../components/navbar/index'
 
 
 
+
 const Home = () => {
 
     useEffect(() => {

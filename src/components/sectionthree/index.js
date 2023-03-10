@@ -55,7 +55,6 @@ function SectionThree() {
       <div
         className="threeslideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-        onMouseEnter= "resetTimeout()"
       >
         {Sections.map((section, index) => (
           <React.Fragment key={index}>
