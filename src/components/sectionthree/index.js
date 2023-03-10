@@ -7,7 +7,7 @@ import ThreeSlideTwo from "./ThreeSlideTwo";
 
 
 
-const delay = 9000;
+const delay = 11000;
 
 const Sections= [
  
@@ -20,6 +20,7 @@ const Sections= [
 
 function SectionThree() {
   const [index, setIndex] = React.useState(0);
+
   const timeoutRef = React.useRef(null);
 
   function resetTimeout() {
@@ -43,11 +44,18 @@ function SectionThree() {
     };
   }, [index]);
 
+
+
+
   return (
     <div className="threeslideshow">
+      
+ 
+
       <div
         className="threeslideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        onMouseEnter= "resetTimeout()"
       >
         {Sections.map((section, index) => (
           <React.Fragment key={index}>

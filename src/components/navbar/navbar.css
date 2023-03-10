@@ -259,7 +259,6 @@
         color: #fff;
         font-size: 16px;
         padding:15px;
-        background-color: #043F2E;
         cursor: pointer;
         margin-top: 20px;
         width: 50%;
@@ -275,10 +274,9 @@
     .whynearpays-bg {
         position: relative;
         text-decoration: none;
-        color: #043F2E;
+        color: #fff !important;
         font-size: 16px;
         padding:15px;
-        background-color: #fff;
         cursor: pointer;
         margin-top: 20px;
         width: 50%;

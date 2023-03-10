@@ -5,22 +5,18 @@ export const FaqContainer = styled.div`
     display: flex;
     width: 100%;
     position: relative;
-    height: 1174px;
+    height: auto;
+    padding-bottom:100px;
     margin-top: 0;
     background: #E0EBE3;
+    overflow: hidden;
   
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
-        height: 1374px;
 
     }
 
-    @media screen and (max-width: 555px) {
-    
-      
-
-    }
 `
 export const LeftSide = styled.div`
     width: 30%;
@@ -97,11 +93,12 @@ export const Faqitems = styled.div`
 export const FaqQuestion = styled.div`
     position: relative;
     width: 98%;
-    font-family: 'Fakt Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     color: #2E312F;
+    align-items: center;
+    top: 12px;
 `
 export const FaqAnswer = styled.div`
     position: relative;
@@ -110,23 +107,23 @@ export const FaqAnswer = styled.div`
 
 `
 export const Faqicons = styled.div`
-    position: relative;
+    position: absolute;
     color: #2E312F;
     cursor: pointer;
-    top: 15px;
+    top: 43%;
     text-align: right;
     justify-content: end;
+    left: 95%;
 
     @media screen and (max-width: 769px) {
         
-
+        left: 90%;
     }
 `
 export const Moretext =styled.div`
     position: relative;
     font-size: 20px;
     font-weight: 450;
-    line-height: 36px;
     color: #2E312F;
     top: 36px;
 

@@ -12,6 +12,9 @@ import Footer from './components/footer';
 import Register1 from './pages/register/register-page-1';
 import Update from './pages/update';
 
+import ImageSlidegeSlide from './components/imageslide/ImageSlider';
+
+
 
 
 function App() {
@@ -28,7 +31,8 @@ function App() {
         <Route exact path='/sign-in'  element={<SignIn/>} />
         <Route exact path='/profile'  element={<Profile/>} />
         <Route exact path='/success'  element={<Register3/>} />
-        <Route exact path='/update/:id'  element={<Update/>} />
+        <Route exact path='/update/:id' element={<Update />} />
+        <Route exact path='/test'  element={<ImageSlidegeSlide/>} />
       
       </Routes>
    
