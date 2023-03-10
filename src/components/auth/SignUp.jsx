@@ -1,44 +1,55 @@
 import React, { useState } from 'react'
-import { Alert} from 'react-bootstrap'
+// import { Alert} from 'react-bootstrap'
 import { Navbg } from '../navbar/NavStyles';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import  Axios  from 'axios';
 
 
 
 
 
-export default function Signup(){
+const Signup = () =>{
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [password2, setPassword2] = useState('')
   const [username, setUsername] = useState('')
   const [fullname, setFullname] = useState('')
   const [phone, setPhone] = useState('')
   const [address, setAddress] = useState('')
-  const [registerStatus, setRegisterStatus] = useState('')
-  const navigate = useNavigate()
 
-  Axios.defaults.withCredentials = true;
-  
-  const signUp = (e) => {
+  const onSubmit = async e => {
     e.preventDefault();
-    Axios.post("http://localhost:3001/api/users/sign-up", {
-      email: email,
-      username: username,
-      password: password,
-      fullname: fullname,
-      phone: phone,
-      address: address
-
-    }).then((response) => {
-      if(response.data.message){
-        setRegisterStatus(response.data.message)
-      }else{
-        setRegisterStatus(navigate('/success'))
+    if (password !== password2) {
+      console.log('Passwords do not match');
+    } else {
+      const newUser = {
+        username,
+        email,
+        password,
+        fullname,
+        phone,
+        address
       }
-    })
-  }
+      Axios.defaults.withCredentials = true;
+
+      try {
+        const config = {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+        const body = JSON.stringify(newUser);
+
+        const res = await Axios.post('http://127.0.0.1:3001/api/users/', body);
+        console.log(res.data)
+
+      } catch (err) {
+        console.error(err)
+      }
+    }
+}
+
 
   
   return (
@@ -49,7 +60,7 @@ export default function Signup(){
             <form className='sign-in-form'>
                 <h1 className='auth-header'>Register</h1>
                 
-                {<Alert variant="danger" style={{padding:'0', top:'125px', position:'absolute', width:'100%', textAlign:'center'}}>{registerStatus}</Alert>}
+                {/* {<Alert variant="danger" style={{padding:'0', top:'125px', position:'absolute', width:'100%', textAlign:'center'}}>{registerStatus}</Alert>} */}
                 
                 <input 
                   className='sign-in-input'
@@ -68,15 +79,6 @@ export default function Signup(){
                   placeholder="Enter Username" 
                   required
                   onChange={(e) => {setUsername(e.target.value)}}
-                  >
-                </input>
-
-                <input 
-                  className='sign-in-input'
-                  type="password" 
-                  placeholder="Enter Your Password" 
-                  required
-                  onChange={(e) => {setPassword(e.target.value)}}
                   >
                 </input>
 
@@ -107,11 +109,30 @@ export default function Signup(){
                   required
                   onChange={(e) => {setAddress(e.target.value)}}
                   >
+            </input>
+            
+            <input 
+                  className='sign-in-input'
+                  type="password" 
+                  placeholder="Enter Your Password" 
+                  required
+                  onChange={(e) => {setPassword(e.target.value)}}
+                  >
+            </input>
+            
+
+            <input 
+                  className='sign-in-input'
+                  type="password" 
+                  placeholder="Comfirm Your Password" 
+                  required
+                  onChange={(e) => {setPassword2(e.target.value)}}
+                  >
                 </input>
 
 
 
-                <button className='sign-up-btn' type='submit' onClick={signUp}> Sign Up</button>
+                <button className='sign-up-btn' type='submit' onClick={onSubmit}> Sign Up</button>
                 <p id='sign-in-text'>Already have an account <Link to="/sign-in">Sign In</Link></p>
             </form>
         </div>
@@ -120,23 +141,8 @@ export default function Signup(){
   )
 }
 
+export default Signup;
 
 
 
 
-// async function handleSubmit(e) {
-  // 
-
-  //     if (passwordRef.current.value !== passwordconfirmRef.current.value) {
-  //       return setError("Passwords Do Not Match")
-  //     }
-
-  //     try {
-  //       setError('')
-  //       await signup(emailRef.current.value, passwordRef.current.value)
-  //       navigate('/profile')
-  //     } catch {
-  //       setError("Failed to create an account")
-  //     }
-     
-    // }

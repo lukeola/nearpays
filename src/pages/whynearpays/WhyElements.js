@@ -16,6 +16,7 @@ export const SectionOne = styled.div`
 
     @media screen and (max-width: 769px) {
         flex-direction: column;
+        height: 430px;
     }
   
 `
@@ -74,24 +75,10 @@ export const Text = styled.div`
 export const SectionTwo = styled.div`
     position: relative;
     width: 100%;
-    height: 819px;
-    top: 0px;
-    padding-bottom: -10%;
+    aspect-ratio: 1.63/1;
+    background:#E0EBE3;
 
-    @media screen and (max-width: 769px) {
-        height: 571px;
-        padding-bottom: 0%;
-    }
 
-    @media screen and (max-width: 500px) {
-        height: 400px;
-        padding-bottom: 0%;
-    }
-
-    @media screen and (max-width: 400px) {
-        height: 350px;
-        padding-bottom: 0%;
-    }
 `
 export const SectionThree = styled.div`
     position: relative;
@@ -166,7 +153,7 @@ export const ThreeText2 = styled.div`
 export const SectionFour = styled.div`
     position: relative;
     width: 100%;
-    height: 941px;
+    height: 1041px;
     background: #E0EBE3;
 `
 export const SectionFourUp = styled.div`
@@ -256,7 +243,7 @@ export const Downheader = styled.div`
     @media screen and (max-width: 769px) {
         position: relative;
         width: 60%;
-        top: 655px;
+        top: 755px;
         font-size: 24px;
         left: 5%;
         line-height: 31px;
@@ -278,7 +265,7 @@ export const Downtext = styled.div`
     @media screen and (max-width: 769px) {
         position: absolute;
         width: 90%;
-        top: 739px;
+        top: 839px;
         font-size: 16px;
         left: 5%;
     }
@@ -293,7 +280,7 @@ export const Downline = styled.div`
 
     @media screen and (max-width: 769px) {
         
-        top: 655px;
+        top: 755px;
         left: 95%;
         height: 256px;
     
@@ -303,7 +290,7 @@ export const Downline = styled.div`
 export const DownImage = styled.div`
     position: absolute;
     width: 35%;
-    height: 397px;
+    aspect-ratio: 1.28/1;
     left: 8%;
     top: 474px;
     border-radius: 16px;
@@ -311,9 +298,8 @@ export const DownImage = styled.div`
     @media screen and (max-width: 769px) {
         position: absolute;
         width: 90%;
-        top: 367px;
         left: 5%;
-        height: 256px;
+        top: 354px;
     
     }
 `
