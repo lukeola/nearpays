@@ -14,6 +14,9 @@ export const SectionTwoContainer = styled.div`
     @media screen and (max-width: 769px) {
         height: 868px;
     }
+    @media screen and (max-width: 376px) {
+        height: 958px;
+    }
 `
 export const SectionTwoHeader = styled.div`
     position: relative;

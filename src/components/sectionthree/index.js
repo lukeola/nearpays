@@ -49,8 +49,6 @@ function SectionThree() {
 
   return (
     <div className="threeslideshow">
-      
- 
 
       <div
         className="threeslideshowSlider"
