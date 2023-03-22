@@ -51,27 +51,27 @@ const SectionOne = () => {
       <BoxContainer>
 
         <Boxes data-aos="zoom-in">
-            <Boxicon><img src={Icon1} alt=''/></Boxicon>
+            <Boxicon ><img src={Icon1} alt='' style={{objectFit:'contain', height:'100%', width:'100%'}}/></Boxicon>
             <BoxHeading>1. <span style={{marginLeft:'10px'}}>Convenience</span></BoxHeading>
             <BoxText>Nearpays allows users to make cashless transactions using their mobile devices, eliminating the need for physical cash or cards. This means that users can make payments anytime, anywhere, without having to carry cash or worry about finding an ATM or bank.
             </BoxText>
         </Boxes>
 
         <Boxes data-aos="zoom-in">
-            <Boxicon><img src={Icon2} alt=''/></Boxicon>
+            <Boxicon><img src={Icon2} alt='' style={{objectFit:'contain', height:'80%', width:'100%'}}/></Boxicon>
             <BoxHeading>2. <span style={{marginLeft:'10px'}}>Security</span></BoxHeading>
             <BoxText>Now you don't have to pull out your cards, simply pay with your phone</BoxText>
         </Boxes>
 
         <Boxes data-aos="zoom-in">
-            <Boxicon><img src={Icon3} alt=''/></Boxicon>
+            <Boxicon><img src={Icon3} alt='' style={{objectFit:'contain', height:'100%', width:'100%'}}/></Boxicon>
             <BoxHeading>3. <span style={{marginLeft:'10px'}}>Accessibility</span></BoxHeading>
             <BoxText>Nearpays is designed to be user-friendly and accessible to all, regardless of their level of digital literacy. The platform is supported by a dedicated customer service team that is available to assist users with any issues or questions they may have.
             </BoxText>
         </Boxes>
 
         <Boxes data-aos="zoom-in">
-            <Boxicon><img src={Icon4} alt=''/></Boxicon>
+            <Boxicon><img src={Icon4} alt='' style={{objectFit:'contain', height:'100%', width:'100%'}}/></Boxicon>
             <BoxHeading>4. <span style={{marginLeft:'10px'}}>Speed</span></BoxHeading>
             <BoxText>Nearpays transactions are processed in real-time, meaning that payments and transfers are completed quickly and efficiently.</BoxText>
         </Boxes>

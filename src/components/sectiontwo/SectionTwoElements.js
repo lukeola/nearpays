@@ -5,11 +5,13 @@ import '../../index.css'
 
 export const SectionTwoContainer = styled.div`
     position: relative;
-    height: 748px;
+    height: 798px;
     width: 100%;
     background: #FFFFFF;
 
-
+    @media screen and (max-width: 905px) {
+        height: 968px;
+    }
 
     @media screen and (max-width: 769px) {
         height: 868px;
@@ -174,6 +176,12 @@ export const BlueLine = styled.div`
     height: 131px;
     left: 60%;
     margin-top: 225px;
+
+    @media screen and (max-width: 1246px) {
+        position: absolute;
+        margin-top: 345px;
+       
+    }
 
     @media screen and (max-width: 1024px) {
         position: absolute;

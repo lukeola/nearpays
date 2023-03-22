@@ -8,6 +8,7 @@ export const SectionOneContainer = styled.div`
     height: 817px;
     display: flex;
     background: #E8F3EB;
+    padding: 0 5%;
    
 
     @media screen and (max-width: 1129px) {
@@ -16,9 +17,15 @@ export const SectionOneContainer = styled.div`
     
     }
 
-    @media screen and (max-width: 733px) {
-        height:1100px;
-        flex-direction: column;
+    @media screen and (max-width: 771px) {
+        height:1150px;
+
+    
+    }
+
+    @media screen and (max-width: 341px) {
+        height:1250px;
+      
     
     }
 
@@ -73,22 +80,25 @@ export const SectionOneHeader = styled.div`
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 28px;
+        font-size: 26px;
     
     }
 
 `
 export const BoxContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(371px, 0.6fr));
+    grid-template-columns: repeat(auto-fit, minmax(371px, 1fr));
     position: absolute;
     top: 173px;
     gap: 2rem;
  
  
 
-    @media screen and (max-width: 1190px) {
-        grid-template-columns: repeat(auto-fit, minmax(351px, 0.7fr));
+    @media screen and (max-width: 1218px) {
+        grid-template-columns: repeat(auto-fit, minmax(351px, 1fr));
+    }
+    @media screen and (max-width: 1155px) {
+        grid-template-columns: repeat(auto-fit, minmax(331px, 1fr));
     }
 
     @media screen and (max-width: 1129px) {
@@ -114,8 +124,8 @@ export const Boxes = styled.div`
     aspect-ratio:1/.6;
     padding-left:10px;
 
-    @media screen and (max-width: 733px) {
-        aspect-ratio:1/.4;
+    @media screen and (max-width: 771px) {
+        aspect-ratio:1/.3;
     
     }
     
@@ -125,7 +135,7 @@ export const BoxHeading = styled.div`
     font-size: 24px;
     font-weight: 500;
 
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 771px) {
         font-size: 18px;
     }
 
@@ -134,13 +144,14 @@ export const BoxText = styled.div`
     font-size: 16px;
     font-weight: 300;
     color: #6A706C;
-
+    line-height: 27px;
+    letter-spacing: 0em;
     text-align: left;
     width: 100%;
 
    
 
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 771px) {
         font-size: 14px;
     }
 
@@ -148,4 +159,12 @@ export const BoxText = styled.div`
 export const Boxicon = styled.div`
     width: 10%;
     aspect-ratio: 1/1;
+
+    @media screen and (max-width: 771px) {
+        width: 50px;
+    }
+
+    @media screen and (max-width: 650px) {
+        width: 10%;
+    }
 `
