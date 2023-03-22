@@ -2,26 +2,43 @@ import React, { useState } from 'react'
 // import { Alert} from 'react-bootstrap'
 import { Navbg } from '../navbar/NavStyles';
 import { Link } from 'react-router-dom';
-import  Axios  from 'axios';
+import  axios  from 'axios';
+// import { connect } from 'react-redux';
+// import { setAlert } from '../../actions/alert';
+// import { encodeBase64 } from 'bcryptjs';
 
 
+const accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjozMSwiaXNTZWNvbmRGYWN0b3JBdXRoZW50aWNhdGVkIjp0cnVlLCJyb2xlIjp7ImlkIjoic3VwZXItYWRtaW4iLCJ0YWciOiJhZG1pbiIsIm5hbWUiOiJTdXBlciBBZG1pbiIsInN0YXR1cyI6dHJ1ZSwicGVybWl0aW9ucyI6W10sImNyZWF0ZWRfYXQiOiIyMDIzLTAyLTEwVDE5OjA3OjIyLjA5OVoiLCJ1cGRhdGVkX2F0IjoiMjAyMy0wMi0xMFQxOTowNzoyMi4wOTlaIn0sImlhdCI6MTY3ODU2MDUwM30.V5p9bsATvTerrvwMh1faVGEgiDfYrUrs7K50hE4EKzE';
 
-
-
+const authAxios = axios.create({
+  baseURL: 'https://www.api.nearpays.com/',
+  headers: {
+    Authorization: `Bearer ${accessToken}`
+  }
+})
 const Signup = () =>{
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [password2, setPassword2] = useState('')
-  const [username, setUsername] = useState('')
-  const [fullname, setFullname] = useState('')
-  const [phone, setPhone] = useState('')
-  const [address, setAddress] = useState('')
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    password2: '',
+    fullname: '',
+    phone: '',
+    address:''
+    
+  })
 
+
+  const { username, email, password, password2, fullname, phone, address } = formData
+
+  const onChange = e =>
+    setFormData({...formData, [e.target.name]: e.target.value})
+  
   const onSubmit = async e => {
     e.preventDefault();
     if (password !== password2) {
-      console.log('Passwords do not match');
+    console.log('Passwords do not match')
     } else {
       const newUser = {
         username,
@@ -31,21 +48,28 @@ const Signup = () =>{
         phone,
         address
       }
-      Axios.defaults.withCredentials = true;
-
+      // axios.defaults.withCredentials = true;
+      
       try {
-        const config = {
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        }
+        // const config = {
+        //   headers: {
+        //     'Content-Type': 'application/json'
+        //   }
+        // }
+        let headers = new Headers();
+
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+        // headers.append('Authorization', 'Basic ' + encodeBase64(username + ":" +  password));
+        headers.append('Origin', 'http://127.0.0.1:3001/api/users');
+        
         const body = JSON.stringify(newUser);
 
-        const res = await Axios.post('http://127.0.0.1:3001/api/users/', body);
-        console.log(res.data)
+        const result = await authAxios.get('/user', body);
+        console.log(result)
 
-      } catch (err) {
-        console.error(err)
+      } catch (error) {
+        console.log(error)
       }
     }
 }
@@ -60,14 +84,14 @@ const Signup = () =>{
             <form className='sign-in-form'>
                 <h1 className='auth-header'>Register</h1>
                 
-                {/* {<Alert variant="danger" style={{padding:'0', top:'125px', position:'absolute', width:'100%', textAlign:'center'}}>{registerStatus}</Alert>} */}
-                
                 <input 
                   className='sign-in-input'
                   type="email" 
-                  placeholder='Enter your Email' 
+                  placeholder='Enter Your Email' 
                   required
-                  onChange={(e) => {setEmail(e.target.value)}}
+                  name='email'
+                  value={email}
+                  onChange={e => onChange(e)}
                  
                   >
                 
@@ -76,21 +100,22 @@ const Signup = () =>{
                 <input 
                   className='sign-in-input'
                   type="text" 
-                  placeholder="Enter Username" 
+                  placeholder="Enter Your Username" 
                   required
-                  onChange={(e) => {setUsername(e.target.value)}}
-                  >
+                  name='username'
+                  value={username}
+                  onChange={e => onChange(e)}>
                 </input>
 
-                {/* <h1 className='auth-header'>Tell us a little more about yourself</h1> */}
 
                 <input 
                   className='sign-in-input'
                   type="text" 
                   placeholder="Enter Your Full Name" 
                   required
-                  onChange={(e) => {setFullname(e.target.value)}}
-                  >
+                  name='fullname'
+                  value={fullname}
+                  onChange={e => onChange(e)}>
                 </input>
 
                 <input 
@@ -98,8 +123,9 @@ const Signup = () =>{
                   type="phone" 
                   placeholder="Enter Your Phone Number" 
                   required
-                  onChange={(e) => {setPhone(e.target.value)}}
-                  >
+                  name='phone'
+                  value={phone}
+                  onChange={e => onChange(e)}>
                 </input>
 
                 <input 
@@ -107,8 +133,9 @@ const Signup = () =>{
                   type="address" 
                   placeholder="Enter Your Address" 
                   required
-                  onChange={(e) => {setAddress(e.target.value)}}
-                  >
+                  name='address'
+                  value={address}
+                  onChange={e => onChange(e)}>
             </input>
             
             <input 
@@ -116,8 +143,9 @@ const Signup = () =>{
                   type="password" 
                   placeholder="Enter Your Password" 
                   required
-                  onChange={(e) => {setPassword(e.target.value)}}
-                  >
+                  name='password'
+                  value={password}
+                  onChange={e => onChange(e)}>
             </input>
             
 
@@ -126,8 +154,9 @@ const Signup = () =>{
                   type="password" 
                   placeholder="Comfirm Your Password" 
                   required
-                  onChange={(e) => {setPassword2(e.target.value)}}
-                  >
+                  name='password2'
+                  value={password2}
+                  onChange={e => onChange(e)}>
                 </input>
 
 

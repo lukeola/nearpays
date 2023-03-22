@@ -1,10 +1,9 @@
-import React, {  useEffect, useState } from 'react'
+import React, {   useState } from 'react'
 import { Alert} from 'react-bootstrap'
 import { Navbg } from '../navbar/NavStyles';
 import { useNavigate } from 'react-router-dom';
 import './signin.css'
-import Axios  from 'axios';
-
+import axios  from 'axios';
 
 
 
@@ -16,30 +15,41 @@ export default function Signin() {
   const navigate = useNavigate()
 
 
-Axios.defaults.withCredentials = true;
+  axios.defaults.withCredentials = true;
+
+  const body = {
+    username: username,
+    password: password,
+  }
+          const config = {
+          headers: {
+              'Content-Type': 'application/json',
+              'Access-Control-Allow-Origin': 'http://127.0.0.1:3001/'
+            },
+            method: 'POST',
+          
+        }
 
 const signIn = (e) =>{
   e.preventDefault();
-  Axios.post("http://localhost:3001/api/auth/sign-in", {
-    username: username,
-    password: password,
-  }).then((response) => {
+  axios.post("http://127.0.0.1:3001/api/profile", body, config).then((response) => {
     if(response.data.message){
       setSigninStatus(response.data.message)
     }else{
-      setSigninStatus(navigate('/'))
+      // setSigninStatus(navigate('/'))
+      console.log(response)
       // setSigninStatus(response.data[0].email)
     }
   })
 }
 
  
-useEffect(() => {
-  Axios.get("http://localhost:3001/api/auth/sign-in").then((response) => {
-    console.log(response)
-  })
+// useEffect(() => {
+//   authAxios.get("profile/").then((response) => {
+//     console.log(response)
+//   })
 
-  }, [])
+//   }, [])
 
   return (
     <>

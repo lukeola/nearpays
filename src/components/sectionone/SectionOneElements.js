@@ -5,92 +5,125 @@ import '../../index.css'
 export const SectionOneContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 847px;
+    height: 817px;
+    display: flex;
     background: #E8F3EB;
    
 
-    @media screen and (max-width: 769px) {
-        height: 1250px;
+    @media screen and (max-width: 1129px) {
+        height:900px;
+        flex-direction: column;
+    
+    }
+
+    @media screen and (max-width: 733px) {
+        height:1100px;
+        flex-direction: column;
+    
+    }
+
+
+
+`
+export const SectionOneLeft = styled.div`
+    width: 35%;
+    left: 5%;
+
+    @media screen and (max-width: 1129px) {
+       left: 32.5%;
+       position: relative;
+    }
+
+`
+
+export const SectionOneRight = styled.div`
+    width: 60%;
+
+    @media screen and (max-width: 1129px) {
+        width: 100%;
+        position: relative;
     }
 `
-export const SectionOneText = styled.div`
-    position: absolute;
-    width: 70%;
-    margin-left: 13%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    color: #000;
-    top: 100px;
+export const ImageContainer = styled.div`
+    margin-top: 247px;
+    width: 90%;
+    margin-left: 10%;
 
-    @media screen and (max-width: 769px) {
-        font-size: 16px;
-        width: 80%;
-        margin-left: 5%;
-        top: 48px;
+    @media screen and (max-width: 1129px) {
+       display: none;
+        
     }
 `
 export const SectionOneHeader = styled.div`
     position: relative;
-    width: 60%;
-    margin-left: 13%;
+    width: 100%;
+    margin-left: 0%;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 61px;
     color: #000;
-    top: 152px;
+    top: 64px;
 
-    @media screen and (max-width: 769px) {
-        font-size: 24px;
-        width: 90%;
-        margin-left: 5%;
-        top: 100px;
-        line-height: 40px;
+    @media screen and (max-width: 1129px) {
+        font-size: 34px;
+        top: 40px;
+        text-align: center;
+    
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 28px;
+    
     }
 
 `
 export const BoxContainer = styled.div`
-    position: relative;
-    top: 250px;
-    display: flex;
-    width: 80%;
-    margin-left: 10%;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(371px, 0.6fr));
+    position: absolute;
+    top: 173px;
+    gap: 2rem;
+ 
+ 
 
-    @media screen and (max-width: 769px) {
-        flex-direction: column;
-        gap: 285px;
-        top: 163px;
-        width: 90%;
-        margin-left: 5%;
+    @media screen and (max-width: 1190px) {
+        grid-template-columns: repeat(auto-fit, minmax(351px, 0.7fr));
     }
+
+    @media screen and (max-width: 1129px) {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 113px;
+        
+    }
+
+    @media screen and (max-width: 733px) {
+        gap: 3rem;
+    }
+
+
+
 
 `
 export const Boxes = styled.div`
-    position: relative;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px ;
+    aspect-ratio:1/.6;
+    padding-left:10px;
 
-    @media screen and (max-width: 769px) {
-        font-size: 24px;
-        width: 90%;
-        margin-left: 5%;
-
-
+    @media screen and (max-width: 733px) {
+        aspect-ratio:1/.4;
+    
     }
     
- 
 `
 export const BoxHeading = styled.div`
-    width: 80%;
+    width: 100%;
     font-size: 24px;
     font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top: 50px;
-    margin-left: 10%;
 
     @media screen and (max-width: 769px) {
         font-size: 18px;
@@ -100,12 +133,11 @@ export const BoxHeading = styled.div`
 export const BoxText = styled.div`  
     font-size: 16px;
     font-weight: 300;
-    line-height: 27px;
-    letter-spacing: 0em;
+    color: #6A706C;
+
     text-align: left;
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+
    
 
     @media screen and (max-width: 769px) {
@@ -113,95 +145,7 @@ export const BoxText = styled.div`
     }
 
 `
-export const Box1 = styled.div`
-    position: absolute;
-    width: 90%;
-    height: 310.1px;
-    left: 10%;
-    background: #45C6BE;
-    border-radius: 8px;
-    z-index: 1;
-
-    @media screen and (max-width: 769px) {
-        height: 267px;
-        left: 5%;
-    }
-`
-export const Box1bg = styled.div`
-    position: absolute;
-    width: 90%;
-    height: 313.38px;
-    top: 5px;
-    left: 12%;
-    background: #A0EFEA;
-    border-radius: 8px;
-
-    @media screen and (max-width: 769px) {
-        height: 270px;
-        left: 7%;
-    }
-`
-export const Box2 = styled.div`
-    position: absolute;
-    width: 90%;
-    height: 310.1px;
-    left: 10%;
-    background:  #97BCB3;;
-    border-radius: 8px;
-    transform: matrix(1, 0.01, 0, 1, 0, 0);
-    z-index: 1;
-
-    @media screen and (max-width: 769px) {
-        height: 267px;
-        transform: none;
-        left: 5%;
-    }
-`
-export const Box2bg = styled.div`
-    position: absolute;
-    width: 90%;
-    height: 313.38px;
-    top: 5px;
-    left: 12%;
-    background:  #D1E8E2;
-    border-radius: 8px;
-    /* transform: matrix(1, 0.01, 0, 1, 0, 0); */
-
-    @media screen and (max-width: 769px) {
-        height: 270px;
-        transform: none;
-        left: 7%;
-    }
-`
-export const Box3 = styled.div`
-    position: absolute;
-    width: 90%;
-    height: 310.1px;
-    left: 10%;
-    background: #9FE7C0;
-    border-radius: 8px;
-    /* transform: matrix(1, 0.06, -0.08, 1, 0, 0); */
-    z-index: 1;
-
-    @media screen and (max-width: 769px) {
-        height: 267px;
-        transform: none;
-        left: 5%;
-    }
-`
-export const Box3bg = styled.div`
-    position: absolute;
-    width: 90%;
-    height: 313.38px;
-    top: 5px;
-    left: 12%;
-    background: #D8E9E0;
-    border-radius: 8px;
-    /* transform: matrix(1, 0.06, -0.08, 1, 0, 0); */
-
-    @media screen and (max-width: 769px) {
-        height: 270px;
-        transform: none;
-        left: 7%;
-    }
+export const Boxicon = styled.div`
+    width: 10%;
+    aspect-ratio: 1/1;
 `

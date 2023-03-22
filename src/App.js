@@ -12,11 +12,15 @@ import Footer from './components/footer';
 import Register1 from './pages/register/register-page-1';
 import Update from './pages/update';
 import CookieConsent from "react-cookie-consent"
+//Redux
+import { Provider } from 'react-redux'
+import store from './store';
 
 
 
 function App() {
-    return (
+  return (
+      <Provider store={store}>
       <Router>
       <Routes>
         <Route exact path='/'  element={<Home/>} />
@@ -41,7 +45,8 @@ function App() {
           buttonStyle={{ color: '#000', backgroundColor: '#5DAF60', marginRight:'20px' }}
           buttonText="Accept"
         ><p style={{ fontSize: '14px', color: '#929B95' }}>This website uses cookies to optimize your experience and to provide us insight on how to interact with the site. All information shared with us through cookies are secured and covered by our data privacy obligation. <span style={{ fontSize: '14px', color: '#929B95' }}>See our </span><a href='/privacy-policy' style={{ textDecoration: 'none', color: '#5DAF60', fontSize: '14px', }}>privacy policy</a> <span style={{ fontSize: '14px', color: '#929B95' }}>for more</span></p></CookieConsent>
-    </Router>
+      </Router>
+      </Provider>
     );
 }
 

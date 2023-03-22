@@ -1,8 +1,13 @@
 import React, {useEffect} from 'react'
-import { Box1, Box1bg, Box2, Box2bg, Box3, Box3bg, BoxContainer, Boxes, BoxHeading, BoxText, SectionOneContainer, SectionOneHeader, SectionOneText } from './SectionOneElements'
+import {  BoxContainer, Boxes, BoxHeading, BoxText, SectionOneContainer, SectionOneHeader, SectionOneRight, SectionOneLeft, ImageContainer, Boxicon} from './SectionOneElements'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import AnimatedText from 'react-animated-text-content';
+import Phoneimg from '../../images/sectionone.png'
+import Icon1 from '../../images/convinience.png'
+import Icon2 from '../../images/secure.png'
+import Icon3 from '../../images/access.png'
+import Icon4 from '../../images/speed.png'
 
 const SectionOne = () => {
 
@@ -13,7 +18,12 @@ const SectionOne = () => {
 
   return (
     <SectionOneContainer>
-      <SectionOneText> Why Nearpays</SectionOneText>
+    
+      <SectionOneLeft>
+        <ImageContainer><img src={Phoneimg} alt='' style={{objectFit:'contain', height:'100%', width:'100%'}} /></ImageContainer>
+      </SectionOneLeft>
+
+      <SectionOneRight>
       <SectionOneHeader>
 
       <AnimatedText
@@ -33,35 +43,42 @@ const SectionOne = () => {
         threshold={0.1}
         rootMargin="20%"
       >
-        Access the best payment management system to suit your lifestyle.
+        Why Nearpays is the Best!
       </AnimatedText>
       
       </SectionOneHeader>
+
       <BoxContainer>
-        <Boxes data-aos='zoom-in'>
-          <Box1>
-            <BoxHeading>One App, Multiple Benefits</BoxHeading>
-            <BoxText>Connect all your banking needs to your phone and complete payment requests on your terms</BoxText>
-          </Box1>
-          <Box1bg/>
+
+        <Boxes data-aos="zoom-in">
+            <Boxicon><img src={Icon1} alt=''/></Boxicon>
+            <BoxHeading>1. <span style={{marginLeft:'10px'}}>Convenience</span></BoxHeading>
+            <BoxText>Nearpays allows users to make cashless transactions using their mobile devices, eliminating the need for physical cash or cards. This means that users can make payments anytime, anywhere, without having to carry cash or worry about finding an ATM or bank.
+            </BoxText>
         </Boxes>
 
-        <Boxes data-aos='zoom-in'>
-          <Box2>
-            <BoxHeading>Payments On The Go</BoxHeading>
+        <Boxes data-aos="zoom-in">
+            <Boxicon><img src={Icon2} alt=''/></Boxicon>
+            <BoxHeading>2. <span style={{marginLeft:'10px'}}>Security</span></BoxHeading>
             <BoxText>Now you don't have to pull out your cards, simply pay with your phone</BoxText>
-          </Box2>
-          <Box2bg/>
         </Boxes>
 
-        <Boxes data-aos='fade-up'>
-          <Box3>
-            <BoxHeading>Seamless Online Transactions</BoxHeading>
-            <BoxText>A simpler way to spend, send and save at your fingertips</BoxText>
-          </Box3>
-          <Box3bg/>
+        <Boxes data-aos="zoom-in">
+            <Boxicon><img src={Icon3} alt=''/></Boxicon>
+            <BoxHeading>3. <span style={{marginLeft:'10px'}}>Accessibility</span></BoxHeading>
+            <BoxText>Nearpays is designed to be user-friendly and accessible to all, regardless of their level of digital literacy. The platform is supported by a dedicated customer service team that is available to assist users with any issues or questions they may have.
+            </BoxText>
         </Boxes>
-      </BoxContainer>
+
+        <Boxes data-aos="zoom-in">
+            <Boxicon><img src={Icon4} alt=''/></Boxicon>
+            <BoxHeading>4. <span style={{marginLeft:'10px'}}>Speed</span></BoxHeading>
+            <BoxText>Nearpays transactions are processed in real-time, meaning that payments and transfers are completed quickly and efficiently.</BoxText>
+        </Boxes>
+
+        </BoxContainer>
+
+        </SectionOneRight>
     </SectionOneContainer>
   )
 }
