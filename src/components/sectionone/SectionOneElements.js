@@ -105,7 +105,7 @@ export const BoxContainer = styled.div`
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 113px;
+        top: 73px;
         
     }
 
