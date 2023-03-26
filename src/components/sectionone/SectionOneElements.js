@@ -5,10 +5,13 @@ import '../../index.css'
 export const SectionOneContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 817px;
+    height: auto;
     display: flex;
     background: #E8F3EB;
-    padding: 0 5%;
+    padding-left:  5%;
+    padding-right:  5%;
+    padding-bottom:50px;
+    padding-top:50px;
    
 
     @media screen and (max-width: 1129px) {
