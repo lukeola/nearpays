@@ -15,7 +15,7 @@ export const SectionOneContainer = styled.div`
    
 
     @media screen and (max-width: 1129px) {
-        height:900px;
+     
         flex-direction: column;
     
     }
