@@ -15,24 +15,8 @@ export const SectionOneContainer = styled.div`
    
 
     @media screen and (max-width: 1129px) {
-     
         flex-direction: column;
-    
     }
-
-    @media screen and (max-width: 771px) {
-       
-
-    
-    }
-
-    @media screen and (max-width: 341px) {
-      
-      
-    
-    }
-
-
 
 `
 export const SectionOneLeft = styled.div`
@@ -73,7 +57,8 @@ export const SectionOneHeader = styled.div`
     font-size: 48px;
     line-height: 61px;
     color: #000;
-    top: 64px;
+    top: 44px;
+
 
     @media screen and (max-width: 1129px) {
         font-size: 34px;
@@ -137,6 +122,7 @@ export const BoxHeading = styled.div`
     width: 100%;
     font-size: 24px;
     font-weight: 500;
+
 
     @media screen and (max-width: 771px) {
         font-size: 18px;
