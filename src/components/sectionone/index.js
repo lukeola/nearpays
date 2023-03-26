@@ -60,7 +60,7 @@ const SectionOne = () => {
         <Boxes data-aos="zoom-in">
             <Boxicon><img src={Icon2} alt='' style={{objectFit:'contain', height:'80%', width:'100%'}}/></Boxicon>
             <BoxHeading>2. <span style={{marginLeft:'10px'}}>Security</span></BoxHeading>
-            <BoxText>Now you don't have to pull out your cards, simply pay with your phone</BoxText>
+            <BoxText>At Nearpays, we prioritise your financial data. Plus, our PCI-DSS compliance ensures that your financial data is protected while you make payments, transfers, and purchases. Our 24/7 monitoring allows us to detect and prevent any suspicious activity, guaranteeing that your data is secure</BoxText>
         </Boxes>
 
         <Boxes data-aos="zoom-in">
@@ -73,7 +73,7 @@ const SectionOne = () => {
         <Boxes data-aos="zoom-in">
             <Boxicon><img src={Icon4} alt='' style={{objectFit:'contain', height:'100%', width:'100%'}}/></Boxicon>
             <BoxHeading>4. <span style={{marginLeft:'10px'}}>Speed</span></BoxHeading>
-            <BoxText>Nearpays transactions are processed in real-time, meaning that payments and transfers are completed quickly and efficiently.</BoxText>
+            <BoxText>We understand that your time is valuable. That's why we've designed our platform to offer lightning-fast transactions that are reliable, secure, and available 24/7. Use Nearpays and experience the speed and convenience of our payment technology</BoxText>
         </Boxes>
 
         </BoxContainer>
