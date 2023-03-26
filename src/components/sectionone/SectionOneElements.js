@@ -10,7 +10,7 @@ export const SectionOneContainer = styled.div`
     background: #E8F3EB;
     padding-left:  5%;
     padding-right:  5%;
-    padding-bottom:50px;
+    padding-bottom:100px;
     padding-top:50px;
    
 
