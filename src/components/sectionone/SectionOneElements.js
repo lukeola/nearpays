@@ -21,13 +21,13 @@ export const SectionOneContainer = styled.div`
     }
 
     @media screen and (max-width: 771px) {
-        height:1150px;
+       
 
     
     }
 
     @media screen and (max-width: 341px) {
-        height:1250px;
+      
       
     
     }
