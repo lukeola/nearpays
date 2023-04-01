@@ -9,18 +9,19 @@ export const SectionOneContainer = styled.div`
     display: flex;
     background: #E8F3EB;
     padding-left:  5%;
-    padding-right:  5%;
-    padding-bottom:100px;
+    padding-right:5%;
+    padding-bottom:200px;
     padding-top:50px;
    
 
     @media screen and (max-width: 1129px) {
         flex-direction: column;
+        padding-bottom:100px;
     }
 
 `
 export const SectionOneLeft = styled.div`
-    width: 35%;
+    width: 30%;
     left: 5%;
 
     @media screen and (max-width: 1129px) {
@@ -31,7 +32,8 @@ export const SectionOneLeft = styled.div`
 `
 
 export const SectionOneRight = styled.div`
-    width: 60%;
+    width: 50%;
+    
 
     @media screen and (max-width: 1129px) {
         width: 100%;
@@ -79,11 +81,13 @@ export const BoxContainer = styled.div`
     position: absolute;
     top: 173px;
     gap: 2rem;
+    padding-right:5%;
  
  
 
     @media screen and (max-width: 1218px) {
         grid-template-columns: repeat(auto-fit, minmax(351px, 1fr));
+        padding-right:0;
     }
     @media screen and (max-width: 1155px) {
         grid-template-columns: repeat(auto-fit, minmax(331px, 1fr));

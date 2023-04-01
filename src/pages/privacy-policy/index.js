@@ -13,7 +13,7 @@ const PrivacyPolicyContainer = styled.div`
   margin-left: 5%;
 `;
 
-const PrivacyPolicyHeader = styled.h2`
+const PrivacyPolicyHeader = styled.h3`
   font-weight: bold;
   margin-bottom: 1em;
   color: #434358;
@@ -42,7 +42,7 @@ const PrivacyPolicy = () => (
     <PrivacyPolicyHeader>Introduction</PrivacyPolicyHeader>
 <div>
     <p>
-      We are Nearpays, a Nigerian Company with offices at [insert address] with company number [insert phone number].
+      We are Nearpays, a Nigerian Company with offices at Abuja Nigeria.
     </p>
     <p>
       For any access request, questions, or inquiries about how we use your Personal Information, please contact us at [insert email address].
@@ -51,7 +51,7 @@ const PrivacyPolicy = () => (
       Nearpays does not take your trusting us with your information for granted. The privacy of our Users is important to us and we are committed to safeguarding it. Hence, this Privacy Policy explains the Personal Information we collect, why we collect it, and what we do with it.
     </p>
 
-    <PrivacyPolicySubHeader>Overview</PrivacyPolicySubHeader>
+    <PrivacyPolicySubHeader style={{marginTop:'20px'}}>Overview</PrivacyPolicySubHeader>
     <p>
       This Privacy Policy describes your privacy rights regarding how and when we collect, use, store, share and protect your information across our website, payment platforms (“Platforms”), APIs, Software Applications, (“Apps”), email notifications and tools regardless of how you use or access them.
     </p>
@@ -63,7 +63,7 @@ const PrivacyPolicy = () => (
     </p>
     </div>
 
-    <PrivacyPolicySubHeader>Definition</PrivacyPolicySubHeader>
+    <PrivacyPolicySubHeader style={{marginTop:'20px'}}>Definition</PrivacyPolicySubHeader>
     <PrivacyPolicyDefinitionList>
       <dt>Account:</dt>
       <dd>means a Nearpays Account.</dd>
@@ -74,12 +74,12 @@ const PrivacyPolicy = () => (
       </dd>
 
       <dt>Nearpays:</dt>
-      <dd>means Nearpays [insert full company name as registered].</dd>
+      <dd>means Nearpays Limited.</dd>
 
-      <dt>Personal Information:</dt>
+     
 
 <div>
-    <h1>Objective</h1>
+    <h3 style={{marginTop:'50px'}}>Objective</h3>
     <p>
       This Privacy Policy statement is to provide all persons and organizations
       whose Personal Information we hold with a description of the types of
@@ -92,8 +92,8 @@ const PrivacyPolicy = () => (
       understand how we collect, use, communicate, disclose, and otherwise
       make use of personal information.
     </p>
-    <h1>Privacy Policy</h1>
-    <h2>1. Personal Information We May Collect About You</h2>
+    <h3 style={{marginTop:'50px'}}>Privacy Policy</h3>
+    <h4>1. Personal Information We May Collect About You</h4>
     <p>
       We may collect, use, process, store, or transfer personal information
       such as:
@@ -151,7 +151,7 @@ const PrivacyPolicy = () => (
         </li>
     </ul>
        
-    <h2>2. How We Get Your Personal Information and Why We Have It</h2>
+    <h4>2. How We Get Your Personal Information and Why We Have It</h4>
     <p>
     The Personal Information we have about you is directly made available to
     us when you:
@@ -186,7 +186,7 @@ Laundering and Counter Terrorist Financing Laws, we must collect and
 store your Personal Information. We protect against fraud by checking
 your identity with your Personal Information.
 </p>
-<h2>3. How We May Use Your Personal Information</h2>
+<h4>3. How We May Use Your Personal Information</h4>
 <p>
 We may use your Personal Information we collect to:
 </p>
@@ -209,7 +209,7 @@ We may use your Personal Information we collect to:
 For other purposes for which we provide specific notice at the time of
 collection.
 </p>
-<h2>4. Data Security and Retention</h2>
+<h4>4. Data Security and Retention</h4>
         <p>
         The security of your Personal Information is important to Nearpays. We
         are committed to protecting the information we collect. We maintain
@@ -224,7 +224,7 @@ collection.
         steps to ensure that your Personal Information is secured and well protected.</p>
         <p>We will only retain personal information on our servers for as long as is reasonably necessary as long as we are providing Services to you. Where you close your Account, your information is stored on our servers to the extent necessary to comply with regulatory obligations and for the purpose of fraud monitoring, detection and prevention. Where we retain your Personal Information,
          we do so in compliance with limitation periods under the applicable law.</p>
-<h2>5. Disclosing your Personal Information</h2>
+<h4>5. Disclosing your Personal Information</h4>
 
 <p>We may disclose or share your Personal Information with third parties which include our affiliates, employees, officers, service providers, agents, suppliers,
  subcontractors as may be reasonably necessary for the purposes set out in this policy.</p>
@@ -256,7 +256,7 @@ collection.
         personal information is transferred and becomes subject to a different
         privacy policy.
       </p>
-      <h2>6. Marketing</h2>
+      <h4>6. Marketing</h4>
       <p>
         We may process your Personal Information in order to contact you or send
         you marketing content and communication about our products, services or
@@ -270,7 +270,7 @@ collection.
         We may ask you for permission to send notifications to you. Our Services
         will still work if you do not grant us consent to send you notifications.
       </p>
-      <h2>7. Your Data Protection Rights and Choices</h2>
+      <h4>7. Your Data Protection Rights and Choices</h4>
       <p>
         Based on your location and applicable laws, below are the rights you
         have as a user in relation to your Personal Information:
@@ -309,12 +309,12 @@ collection.
 
     <div>
 
-        <h2>8. Cookies</h2>
+        <h4>8. Cookies</h4>
         <p>Like many other websites, we use cookies to distinguish you from other users and to customize and improve our services.</p>
         <p>Some browsers may automatically accept cookies, while others can be modified to decline cookies or alert you when a website wants to place a cookie on your computer. If you do choose to disable cookies, it may limit your ability to use our website.
          For detailed information on cookies and how we use them, see our Cookie Policy.</p>
       
-      <h2>9. Minor</h2>
+      <h4>9. Minor</h4>
       <p>
         Nearpays's websites and applications are not directed at persons under
         the age of eighteen (18), and we do not collect any Personal Information
@@ -326,7 +326,7 @@ collection.
         information provided under the Contact Us section to enable
         investigation and restrict such data.
       </p>
-      <h2>10. International Data Transfers</h2>
+      <h4>10. International Data Transfers</h4>
       <p>
         Where Personal Information is to be transferred to a country outside
         Nigeria, Nearpays shall put adequate measures in place to ensure the
@@ -334,7 +334,7 @@ collection.
         securely and in accordance with the Nigerian Data Protection
         Regulation.
       </p>
-      <h2>11. Data Protection Officer</h2>
+      <h4>11. Data Protection Officer</h4>
       <p>
         Nearpays has appointed a Data Protection Officer(s) (DPO) responsible
         for overseeing the Company's data protection strategy and its
@@ -342,7 +342,7 @@ collection.
         is knowledgeable on data privacy and protection principles and is
         familiar with the provisions of the NDPR.
       </p>
-      <h2>12. Training</h2>
+      <h4>12. Training</h4>
       <p>
         Nearpays ensures that employees who collect, access, and process
         Personal Information receive adequate data privacy and protection
@@ -353,7 +353,7 @@ collection.
         Nearpays develops a capacity-building plan for its employees on data
         privacy and protection in line with the NDPR.
       </p>
-      <h2>13. Data Protection Audit</h2>
+      <h4>13. Data Protection Audit</h4>
       <p>
         Nearpays shall conduct an annual data protection audit through a
         licensed Data Protection Compliance Organization (DPCOs) to verify
@@ -362,7 +362,7 @@ collection.
         filed by the DPCO with the National Information Technology Development
         Agency (NITDA) as required under the NDPR.
       </p>
-      <h2>14. Dispute Resolutions and Filing a Compliant</h2>
+      <h4>14. Dispute Resolutions and Filing a Compliant</h4>
       <p>
         If you have any complaints regarding this Privacy Policy, please contact
         us at [insert email address]. Within thirty (30) days, we will
@@ -370,14 +370,14 @@ collection.
         regarding the use and disclosure of personal information in accordance
         with this Privacy Policy and the Nigerian Data Protection Regulation.
       </p>
-      <h2>15. Updates to our privacy policy</h2>
+      <h4>15. Updates to our privacy policy</h4>
       <p>
         From time to time, we may change, amend, or review this Privacy Policy
         from time to time to reflect new services or changes in our Privacy
         Policy and place any updates on this page. All changes made will be
         posted on this page and where changes will materially affect you, we will notify you of this change by placing a notice online or via mail. If you keep using our Services, you consent to all amendments to this Privacy Policy.
         </p>
-        <h2>16. Contact us</h2>
+        <h4>16. Contact us</h4>
         <p>
         All access requests, questions, comments, complaints and other requests regarding the privacy policy should be sent to [insert email address].
 
