@@ -4,7 +4,7 @@ import './navbar.css'
 import '../../index.css'
 import Logoblack from '../../../src/images/Nearpayslogo-black.png'
 import Logowhite from '../../images/Nearpayslogo-white.png'
-import { Navlinks} from './NavStyles'
+import { Navlinks, Registerbtn} from './NavStyles'
 
 const Navbar = () => {
 
@@ -54,9 +54,9 @@ useEffect(() => {
                 <Navlinks className={color ? "contact-bg" : "contact"} style={{color: color ? '#043F2E' : '#fff'}}>Contact Us</Navlinks>
             </Link>
 
-            {/* <Link to="/sign-up" >
-                <Registerbtn className={color ? "register-button-bg" : "register-button"}>Register</Registerbtn>
-            </Link> */}
+            <a href="https://play.google.com/store/apps/details?id=com.nearpays.nearpays">
+                <Registerbtn className={color ? "register-button-bg" : "register-button"}>Download</Registerbtn>
+            </a>
         </ul>
         <button className={color ? "mobile-menu-icon-bg" : "mobile-menu-icon"} onClick={() => setMobile(!Mobile)}>
             {Mobile ? ( <i className='fas fa-times'/>) : (<i className='fas fa-bars' />)}
