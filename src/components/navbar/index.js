@@ -54,7 +54,7 @@ useEffect(() => {
                 <Navlinks className={color ? "contact-bg" : "contact"} style={{color: color ? '#043F2E' : '#fff'}}>Contact Us</Navlinks>
             </Link>
 
-            <a href="https://play.google.com/store/apps/details?id=com.nearpays.nearpays">
+            <a href="https://play.google.com/store/apps/details?id=com.nearpays.nearpays" target='_blank'>
                 <Registerbtn className={color ? "register-button-bg" : "register-button"}>Download</Registerbtn>
             </a>
         </ul>

@@ -286,21 +286,21 @@
         justify-content: center;
         align-items: center;
     }
-
+/* 
     .register-button {
-        /* position: relative;
+        position: relative;
         margin-top: 20px;
         width: 50%;
         color: #fff;
         background-color: transparent;
         left: 3%;
-        filter: none; */
+        filter: none;
        
         
     }
 
     .register-button-bg {
-        /* position: relative;
+        position: relative;
         margin-top: 20px;
         width: 50%;
         color: #fff;
@@ -308,8 +308,8 @@
         left: 3%;
         filter: none;
         border-radius: 0;
-         */
-    }
+        
+    } */
 
  
 }
