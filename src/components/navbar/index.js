@@ -10,9 +10,9 @@ const Navbar = () => {
 
 //************Mobile Responsive View*************/
 const [Mobile, setMobile] = useState(false)
+//******************************************** */
 
 //***************change nav color when scrolling***************/
-
 const [color, setColor] = useState(false)
 const changeColor = () => {
     if (window.scrollY >= 75) {
@@ -24,14 +24,13 @@ const changeColor = () => {
 }
 
 window.addEventListener('scroll', changeColor)
-
 //************************************************************ */
 
 //Scrolls to top o page when you click on a new page link//
 useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
+//****************************************************** */
 
   return (
     <div className={color ? "header-bg" : "header"} >
