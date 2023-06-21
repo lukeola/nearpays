@@ -16,6 +16,7 @@ import Update from './pages/update';
 import { Provider } from 'react-redux'
 import store from './store';
 import Loading from './pages/loading/Loading';
+import Download from './pages/download';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route exact path='/contact-us'  element={<ContactUs/>} />
         <Route exact path='/privacy-policy'  element={<PrivacyPolicy/>} />
         <Route exact path='/more'  element={<Register1/>} />
+        <Route exact path='/download'  element={<Download/>} />
         <Route exact path='/sign-up' element={<SignUp/>}/>
         <Route exact path='/sign-in'  element={<SignIn/>} />
         <Route exact path='/profile'  element={<Profile/>} />

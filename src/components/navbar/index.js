@@ -52,14 +52,11 @@ useEffect(() => {
             <Link to="/contact-us" style={{textDecoration:'none'}} >
                 <Navlinks className={color ? "contact-bg" : "contact"} style={{color: color ? '#043F2E' : '#fff'}}>Contact Us</Navlinks>
             </Link>
-
-             
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvr519cEcfufACqyJ2HCOa1AT5dFd_gZ8HaJ4NhNHrgBS2vw/viewform?embedded=true" target='_blank' style={{textDecoration:'none'}} ><Navlinks className={color ? "contact-bg" : "contact"} style={{color: color ? '#043F2E' : '#fff'}}>Waiting List</Navlinks></a>
           
 
-            <a href="https://play.google.com/store/apps/details?id=com.nearpays.nearpays" target='_blank'>
+            <Link to='/download'>
                 <Registerbtn className={color ? "register-button-bg" : "register-button"}>Download</Registerbtn>
-            </a>
+            </Link>
         </ul>
         <button className={color ? "mobile-menu-icon-bg" : "mobile-menu-icon"} onClick={() => setMobile(!Mobile)}>
             {Mobile ? ( <i className='fas fa-times'/>) : (<i className='fas fa-bars' />)}

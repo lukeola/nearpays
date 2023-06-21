@@ -1,5 +1,7 @@
 /* @import url('https://fonts.cdnfonts.com/css/fakt-pro'); */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 body {
