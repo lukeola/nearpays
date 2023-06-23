@@ -33,7 +33,7 @@ const Home = () => {
         <CookieConsent 
           debug={true}
           style={{ backgroundColor: '#080808' }}
-          buttonStyle={{ color: '#000', backgroundColor: '#5DAF60', marginRight:'20px', display:'flex' }}
+          buttonStyle={{ color: '#000', backgroundColor: '#5DAF60', marginRight:'150px', }}
           buttonText="Accept"
         ><p style={{ fontSize: '14px', color: '#929B95' }}>This website uses cookies to optimize your experience and to provide us insight on how to interact with the site. All information shared with us through cookies are secured and covered by our data privacy obligation. <span style={{ fontSize: '14px', color: '#929B95' }}>See our </span><a href='/privacy-policy' style={{ textDecoration: 'none', color: '#5DAF60', fontSize: '14px', }}>privacy policy</a> <span style={{ fontSize: '14px', color: '#929B95' }}>for more</span></p>
         
