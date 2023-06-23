@@ -37,7 +37,10 @@ const Footer = () => {
         <FooterText>Subscribe to stay updated</FooterText>
 
       
-        <SimpleForm/>
+
+        <div className="ml-embedded" data-form="KlTcik"></div>
+        
+        
     
 
         <NavSocialContainer>
@@ -67,4 +70,6 @@ const Footer = () => {
   )
 }
 
+
 export default Footer
+
